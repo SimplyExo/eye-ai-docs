@@ -1,0 +1,10 @@
+<map id="OperatorBase" name="OperatorBase">
+<area shape="rect" id="node1" title=" " alt="" coords="5,140,116,167"/>
+<area shape="rect" id="node2" href="$classOperator.html" title=" " alt="" coords="166,5,401,61"/>
+<area shape="rect" id="node4" href="$classOperator.html" title=" " alt="" coords="164,85,403,141"/>
+<area shape="rect" id="node6" href="$classOperator.html" title=" " alt="" coords="164,165,403,221"/>
+<area shape="rect" id="node8" href="$classOperator.html" title=" " alt="" coords="186,245,381,272"/>
+<area shape="rect" id="node3" href="$classRelativeDepthPostOperator.html" title="rescales values from [min, max] to [0, 1]" alt="" coords="451,20,651,47"/>
+<area shape="rect" id="node5" href="$classYoloImageOperator.html" title=" " alt="" coords="477,100,624,127"/>
+<area shape="rect" id="node7" href="$classMiDaSImageOperator.html" title=" " alt="" coords="469,180,632,207"/>
+</map>
