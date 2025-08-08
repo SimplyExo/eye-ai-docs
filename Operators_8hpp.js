@@ -2,8 +2,8 @@ var Operators_8hpp =
 [
     [ "OperatorError", "structOperatorError.html", "structOperatorError" ],
     [ "OperatorBase", "classOperatorBase.html", "classOperatorBase" ],
-    [ "Operator", "classOperator.html", "classOperator" ],
-    [ "OperatorChain", "classOperatorChain.html", "classOperatorChain" ],
+    [ "Operator< Input, Output >", "classOperator.html", "classOperator" ],
+    [ "OperatorChain< Ops >", "classOperatorChain.html", "classOperatorChain" ],
     [ "RelativeDepthPostOperator", "classRelativeDepthPostOperator.html", "classRelativeDepthPostOperator" ],
     [ "MiDaSImageOperator", "classMiDaSImageOperator.html", "classMiDaSImageOperator" ],
     [ "YoloImageOperator", "classYoloImageOperator.html", "classYoloImageOperator" ],
