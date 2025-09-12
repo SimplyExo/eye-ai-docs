@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['name_0',['name',['../structProfileScopeRecord.html#a5f7ef82c7d5dff514e787d75d53da749',1,'ProfileScopeRecord']]],
-  ['num_5fchannel_1',['num_channel',['../classYoloModel.html#a5e05b1f38d860369c6d5a30dea069c7a',1,'YoloModel']]],
-  ['num_5felements_2',['num_elements',['../classYoloModel.html#ac8c2c84e95e79ceee8155d6d895d6453',1,'YoloModel']]]
+  ['inferno_5fcolors_0',['INFERNO_COLORS',['../DepthColormap_8cpp.html#ac18e41748a8085f15b4b28187ee04aa6',1,'DepthColormap.cpp']]],
+  ['input_5felements_1',['input_elements',['../structQuantizationElementsMismatch.html#a1d80befb65abec1ec0b91c2d5a1a402c',1,'QuantizationElementsMismatch']]]
 ];

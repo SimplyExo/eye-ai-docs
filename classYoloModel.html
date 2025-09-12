@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9" />
 		<meta name="generator" content="Doxygen 1.13.2" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>eye-ai: YoloModel Class Reference</title>
+		<title>EyeAI: YoloModel Class Reference</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -151,7 +151,7 @@
 							</td>
 							<td id="projectalign" style="padding-left: 0.5em">
 								<div id="projectname">
-									eye-ai
+									EyeAI
 								</div>
 							</td>
 						</tr>
@@ -245,8 +245,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acf56b0f56bf5dd02cf67e2aa8ce7551a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c288c4e37baa13e28c7e38df7fdad1f" id="r_a9c288c4e37baa13e28c7e38df7fdad1f"><td class="memItemLeft" align="right" valign="top">tl::expected&lt; bool, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c288c4e37baa13e28c7e38df7fdad1f">create</a> (std::vector&lt; int8_t &gt; &amp;&amp;model_data, std::vector&lt; std::string &gt; labels, std::string_view gpu_delegate_serialization_dir, std::string_view model_token, <a class="el" href="TfLiteRuntime_8hpp.html#a0f81401a8cd180af6f4eae3afd0858fd">TfLiteLogWarningCallback</a> log_warning_callback, <a class="el" href="TfLiteRuntime_8hpp.html#ae10cf5db164646559fbb4d9236808f87">TfLiteLogErrorCallback</a> log_error_callback)</td></tr>
 <tr class="separator:a9c288c4e37baa13e28c7e38df7fdad1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea56b6c6444b7751d279927253358ff3" id="r_aea56b6c6444b7751d279927253358ff3"><td class="memItemLeft" align="right" valign="top">tl::expected&lt; void, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea56b6c6444b7751d279927253358ff3">run</a> (std::span&lt; float &gt; input, std::span&lt; float &gt; output)</td></tr>
-<tr class="separator:aea56b6c6444b7751d279927253358ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5668d1f636313e97a23839f4a1a06f" id="r_a6e5668d1f636313e97a23839f4a1a06f"><td class="memItemLeft" align="right" valign="top">tl::expected&lt; std::vector&lt; <a class="el" href="structYoloModel_1_1BoundingBox.html">BoundingBox</a> &gt;, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e5668d1f636313e97a23839f4a1a06f">run</a> (<a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a6c47054d1fb2bbbfbbedccd776b6d9fa">FloatTensorFormat::ImageRGB255</a> &gt; &amp;input)</td></tr>
+<tr class="separator:a6e5668d1f636313e97a23839f4a1a06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86466eed72abd3ca3d25470fa7450b19" id="r_a86466eed72abd3ca3d25470fa7450b19"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structYoloModel_1_1BoundingBox.html">BoundingBox</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86466eed72abd3ca3d25470fa7450b19">best_box</a> (std::span&lt; const float &gt; array) const</td></tr>
 <tr class="separator:a86466eed72abd3ca3d25470fa7450b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a885b2a8e471881cfa9e95d4c4f6f39" id="r_a7a885b2a8e471881cfa9e95d4c4f6f39"><td class="memItemLeft" align="right" valign="top">std::span&lt; const int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a885b2a8e471881cfa9e95d4c4f6f39">get_input_shape</a> ()</td></tr>
@@ -388,21 +388,17 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aea56b6c6444b7751d279927253358ff3" name="aea56b6c6444b7751d279927253358ff3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea56b6c6444b7751d279927253358ff3">&#9670;&#160;</a></span>run()</h2>
+<a id="a6e5668d1f636313e97a23839f4a1a06f" name="a6e5668d1f636313e97a23839f4a1a06f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e5668d1f636313e97a23839f4a1a06f">&#9670;&#160;</a></span>run()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">tl::expected&lt; void, std::string &gt; YoloModel::run </td>
+          <td class="memname">tl::expected&lt; std::vector&lt; <a class="el" href="structYoloModel_1_1BoundingBox.html">YoloModel::BoundingBox</a> &gt;, std::string &gt; YoloModel::run </td>
           <td>(</td>
-          <td class="paramtype">std::span&lt; float &gt;</td>          <td class="paramname"><span class="paramname"><em>input</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a6c47054d1fb2bbbfbbedccd776b6d9fa">FloatTensorFormat::ImageRGB255</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::span&lt; float &gt;</td>          <td class="paramname"><span class="paramname"><em>output</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

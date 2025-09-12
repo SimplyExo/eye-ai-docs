@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['h_0',['h',['../structYoloModel_1_1BoundingBox.html#a299ee0320aca14a972d8661c688f38da',1,'YoloModel::BoundingBox']]]
+  ['expected_0',['expected',['../structInvalidInputFormatForModel.html#ab8d7bcb8f3954cc2813e1ad01dc53ffc',1,'InvalidInputFormatForModel::expected'],['../structInvalidOutputFormatForModel.html#ada885c112e8becd6cceca40dd3c54b6d',1,'InvalidOutputFormatForModel::expected']]],
+  ['expected_5felements_1',['expected_elements',['../structTfLiteTensorElementCountMismatch.html#a910c142484a6c267edc04f028bdf4fa3',1,'TfLiteTensorElementCountMismatch']]]
 ];

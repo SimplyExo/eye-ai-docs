@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['scope_5fdepth_0',['scope_depth',['../structProfileScopeRecord.html#a5ba7db589de9fe23f136e049f5b3baf7',1,'ProfileScopeRecord']]],
-  ['start_1',['start',['../structProfileScopeRecord.html#a65a7e4be314acc46cd97078405768924',1,'ProfileScopeRecord']]],
-  ['status_2',['status',['../structTfLiteCopyFromInputTensorError.html#a4ecc09d76332ea07e745ff57a8c4f609',1,'TfLiteCopyFromInputTensorError::status'],['../structTfLiteCopyToOutputTensorError.html#a91b6120b101f07b92b5efa4519e6692a',1,'TfLiteCopyToOutputTensorError::status'],['../structTfLiteAllocateTensorsError.html#a88fe18e44e04da521b92472c08a30c21',1,'TfLiteAllocateTensorsError::status'],['../structTfLiteInvokeInterpreterError.html#ab45df1e266d23a2661d5dd6a7c6992b3',1,'TfLiteInvokeInterpreterError::status']]]
+  ['picture_5fx_5fresolution_0',['picture_x_resolution',['../classSpatialAudioSettings.html#af673a44cfb505510a8de57612974ef06',1,'SpatialAudioSettings']]],
+  ['picture_5fy_5fresolution_1',['picture_y_resolution',['../classSpatialAudioSettings.html#a3da611ec2111635c54d53d3f92cd6074',1,'SpatialAudioSettings']]],
+  ['polynomial_5fdegree_2',['POLYNOMIAL_DEGREE',['../classRel2AbsDepthModel.html#ad83e6595be76cdaf4d15ae7d594f3653',1,'Rel2AbsDepthModel']]],
+  ['pos_3',['pos',['../structMemoryData.html#ae4c05b36d10b0d5a278b841fa4d716e2',1,'MemoryData']]],
+  ['provided_4',['provided',['../structInvalidInputFormatForModel.html#a3c7c0bfcc4ad4d3771f0d6045490fda0',1,'InvalidInputFormatForModel::provided'],['../structInvalidOutputFormatForModel.html#ae8f811f3454de45cbc568840207dca7c',1,'InvalidOutputFormatForModel::provided']]],
+  ['provided_5felements_5',['provided_elements',['../structTfLiteTensorElementCountMismatch.html#afab35237e5a13f7da33a85425adbe17c',1,'TfLiteTensorElementCountMismatch']]]
 ];

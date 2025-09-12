@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9" />
 		<meta name="generator" content="Doxygen 1.13.2" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>eye-ai: MutexGuard&lt; T &gt; Class Template Reference</title>
+		<title>EyeAI: MutexGuard&lt; T &gt; Class Template Reference</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -151,7 +151,7 @@
 							</td>
 							<td id="projectalign" style="padding-left: 0.5em">
 								<div id="projectname">
-									eye-ai
+									EyeAI
 								</div>
 							</td>
 						</tr>
@@ -259,8 +259,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7907bf526fc99ce10bb87a07aaae37cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a941a98461d00f530dd2149b8e98e0d9b" id="r_a941a98461d00f530dd2149b8e98e0d9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMutexGuard_1_1ScopedAccess.html">ScopedAccess</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a941a98461d00f530dd2149b8e98e0d9b">lock</a> ()</td></tr>
 <tr class="separator:a941a98461d00f530dd2149b8e98e0d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66f126af32e5c1d8030ad73981f7c641" id="r_a66f126af32e5c1d8030ad73981f7c641"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMutexGuard_1_1ConstScopedAccess.html">ConstScopedAccess</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66f126af32e5c1d8030ad73981f7c641">lock</a> () const</td></tr>
-<tr class="separator:a66f126af32e5c1d8030ad73981f7c641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff1ef5fe069e69cebbacd9d33c1bca6" id="r_aeff1ef5fe069e69cebbacd9d33c1bca6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMutexGuard_1_1ConstScopedAccess.html">ConstScopedAccess</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeff1ef5fe069e69cebbacd9d33c1bca6">const_lock</a> () const</td></tr>
+<tr class="separator:aeff1ef5fe069e69cebbacd9d33c1bca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
@@ -404,8 +404,36 @@ template&lt;typename T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aeff1ef5fe069e69cebbacd9d33c1bca6" name="aeff1ef5fe069e69cebbacd9d33c1bca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeff1ef5fe069e69cebbacd9d33c1bca6">&#9670;&#160;</a></span>const_lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structMutexGuard_1_1ConstScopedAccess.html">ConstScopedAccess</a> <a class="el" href="classMutexGuard.html">MutexGuard</a>&lt; T &gt;::const_lock </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>RAII object that locks the mutex and provides access to the value </dd></dl>
+
+</div>
+</div>
 <a id="a941a98461d00f530dd2149b8e98e0d9b" name="a941a98461d00f530dd2149b8e98e0d9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a941a98461d00f530dd2149b8e98e0d9b">&#9670;&#160;</a></span>lock() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a941a98461d00f530dd2149b8e98e0d9b">&#9670;&#160;</a></span>lock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,34 +448,6 @@ template&lt;typename T&gt; </div>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>RAII object that locks the mutex and provides access to the value </dd></dl>
-
-</div>
-</div>
-<a id="a66f126af32e5c1d8030ad73981f7c641" name="a66f126af32e5c1d8030ad73981f7c641"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66f126af32e5c1d8030ad73981f7c641">&#9670;&#160;</a></span>lock() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structMutexGuard_1_1ConstScopedAccess.html">ConstScopedAccess</a> <a class="el" href="classMutexGuard.html">MutexGuard</a>&lt; T &gt;::lock </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
         </tr>
       </table>
   </td>

@@ -1,0 +1,7 @@
+<map id="SpatialAudio" name="SpatialAudio">
+<area shape="rect" id="Node000001" title=" " alt="" coords="73,112,168,139"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,89,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,48,44,68,51,87,63,100,78,109,76,114,60,104,46,89,39,69,39,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="128,5,262,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,48,180,69,168,90,142,113,138,109,164,86,176,67,184,46"/>
+</map>

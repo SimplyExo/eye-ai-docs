@@ -8,5 +8,6 @@ var classTfLiteRuntime =
     [ "get_output_shape", "classTfLiteRuntime.html#aa7e5920c553b118bfbab3d8883d5f2d5", null ],
     [ "operator=", "classTfLiteRuntime.html#a42db1d02b0632109d01009f980796444", null ],
     [ "operator=", "classTfLiteRuntime.html#a5fd45b72185b813c4de321e7de3d5ed7", null ],
-    [ "run_inference", "classTfLiteRuntime.html#ad007b379a0086aac496e2f3016a7a906", null ]
+    [ "run_inference", "classTfLiteRuntime.html#a88635b0468337882aa3b63c78ddddd05", null ],
+    [ "run_inference", "classTfLiteRuntime.html#ab541501a8b6f520c20b8e939aa7e63fd", null ]
 ];

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['x1_0',['x1',['../structYoloModel_1_1BoundingBox.html#a34bfeba4dd53229849655eccdfb6c8a4',1,'YoloModel::BoundingBox']]],
-  ['x2_1',['x2',['../structYoloModel_1_1BoundingBox.html#a2325bded1b00bbc92b24aabd693d68b8',1,'YoloModel::BoundingBox']]]
+  ['tensor_5felement_5ftype_0',['tensor_element_type',['../structTfLiteNonFloatTensorTypeError.html#ae60e4ba26f8dd5617d879bd0ae6b7c85',1,'TfLiteNonFloatTensorTypeError']]],
+  ['tensor_5ftype_1',['tensor_type',['../structTfLiteNonFloatTensorTypeError.html#ae7b7b866b9291867f9b2dd9f7dfe6175',1,'TfLiteNonFloatTensorTypeError::tensor_type'],['../structTfLiteTensorsNotCreatedError.html#a332e0d1435b2e717d4c06a37f1c1f24a',1,'TfLiteTensorsNotCreatedError::tensor_type'],['../structTfLiteTensorElementCountMismatch.html#aa345630a06dcf56593915c092d9413d7',1,'TfLiteTensorElementCountMismatch::tensor_type']]],
+  ['tracking_5fid_2',['tracking_id',['../structObjectTracker_1_1TrackedBoundingBox.html#ad6c1a1f1a95288ae2b0da8d59bc21e89',1,'ObjectTracker::TrackedBoundingBox']]],
+  ['type_3',['type',['../classTensorType.html#a9ff1927fc9804ac785a2748fc02e7af8',1,'TensorType']]]
 ];

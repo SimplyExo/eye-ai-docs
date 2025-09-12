@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9" />
 		<meta name="generator" content="Doxygen 1.13.2" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>eye-ai: EyeAICore</title>
+		<title>EyeAI: EyeAICore</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -151,7 +151,7 @@
 							</td>
 							<td id="projectalign" style="padding-left: 0.5em">
 								<div id="projectname">
-									eye-ai
+									EyeAI
 								</div>
 							</td>
 						</tr>
@@ -227,7 +227,14 @@ $(function(){initNavTree('md_README.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>the core implementation of EyeAI in crossplatform c++</p>
-<h1>Building EyeAICore</h1>
+<h1>Building EyeAICore from source using Docker container</h1>
+<p>Build docker image:</p>
+<div class="fragment"><div class="line">cd .. # Dockerfile is located at the root, since it copies MiDaS from EyeAIApp</div>
+<div class="line">docker build -t eye-ai .</div>
+</div><!-- fragment --><p>Now you have a docker image that contains a build of EyeAICore from source.</p>
+<p>To run the docker image in a container:</p>
+<div class="fragment"><div class="line">docker run -it eye-ai</div>
+</div><!-- fragment --><h1>Building EyeAICore from source locally</h1>
 <p>Requirements:</p>
 <ul>
 <li>C++ compiler that supports all features of C++ 20. (for example: GCC 13+, Clang 14+ or MSVC 19.30+)</li>
@@ -263,7 +270,8 @@ $(function(){initNavTree('md_README.html',''); initResizable(true); });
 </div><!-- fragment --><p>generate docs:</p>
 <div class="fragment"><div class="line">cmake --preset=debug</div>
 <div class="line">cmake --build --preset=generate_docs</div>
-</div><!-- fragment --><p>the generated doxygen docs will be in <code>build/docs</code> </p>
+</div><!-- fragment --><p>the generated doxygen docs will be in <code>build/docs</code></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="MetricDepth.html">Metric Depth</a> </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

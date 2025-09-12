@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['x1_0',['x1',['../structYoloModel_1_1BoundingBox.html#a34bfeba4dd53229849655eccdfb6c8a4',1,'YoloModel::BoundingBox']]],
-  ['x2_1',['x2',['../structYoloModel_1_1BoundingBox.html#a2325bded1b00bbc92b24aabd693d68b8',1,'YoloModel::BoundingBox']]]
+  ['w_0',['w',['../structYoloModel_1_1BoundingBox.html#a3472e6b9088de2fb29c7abcb9e6deaa7',1,'YoloModel::BoundingBox']]]
 ];

@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9" />
 		<meta name="generator" content="Doxygen 1.13.2" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>eye-ai: include/EyeAICore/utils/MutexGuard.hpp Source File</title>
+		<title>EyeAI: include/EyeAICore/utils/MutexGuard.hpp Source File</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -151,7 +151,7 @@
 							</td>
 							<td id="projectalign" style="padding-left: 0.5em">
 								<div id="projectname">
-									eye-ai
+									EyeAI
 								</div>
 							</td>
 						</tr>
@@ -287,7 +287,7 @@ $(function(){initNavTree('MutexGuard_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structMutexGuard_1_1ConstScopedAccess.html#aba5afe3dfe082d8212d8cbdbac9bb3d2">   52</a></span>        <span class="keyword">explicit</span> <a class="code hl_function" href="structMutexGuard_1_1ConstScopedAccess.html#aba5afe3dfe082d8212d8cbdbac9bb3d2">ConstScopedAccess</a>(<span class="keyword">const</span> T&amp; value, std::mutex&amp; mutex)</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            : value(value), lock(mutex) {}</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structMutexGuard_1_1ConstScopedAccess.html#a8d570a65a1872a5241f0ea19eb8f848d">   54</a></span>        <a class="code hl_function" href="structMutexGuard_1_1ConstScopedAccess.html#a8d570a65a1872a5241f0ea19eb8f848d">~ConstScopedAccess</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structMutexGuard_1_1ConstScopedAccess.html#ad1b7d75125f9d4af819d2b2d0a92fc97">   54</a></span>        <a class="code hl_function" href="structMutexGuard_1_1ConstScopedAccess.html#ad1b7d75125f9d4af819d2b2d0a92fc97">~ConstScopedAccess</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structMutexGuard_1_1ConstScopedAccess.html#a483a2f4a1718cbb0db6c7dada2077963">   56</a></span>        <a class="code hl_function" href="structMutexGuard_1_1ConstScopedAccess.html#a483a2f4a1718cbb0db6c7dada2077963">ConstScopedAccess</a>(<a class="code hl_function" href="structMutexGuard_1_1ConstScopedAccess.html#aba5afe3dfe082d8212d8cbdbac9bb3d2">ConstScopedAccess</a>&amp;&amp;) noexcept = default;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structMutexGuard_1_1ConstScopedAccess.html#a4dfb585b55614bb5af725336a3760935">   57</a></span>        <a class="code hl_function" href="structMutexGuard_1_1ConstScopedAccess.html#aba5afe3dfe082d8212d8cbdbac9bb3d2">ConstScopedAccess</a>(const <a class="code hl_function" href="structMutexGuard_1_1ConstScopedAccess.html#aba5afe3dfe082d8212d8cbdbac9bb3d2">ConstScopedAccess</a>&amp;) = delete;</div>
@@ -310,24 +310,28 @@ $(function(){initNavTree('MutexGuard_8hpp_source.html',''); initResizable(true);
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    };</div>
 </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classMutexGuard.html#a66f126af32e5c1d8030ad73981f7c641">   76</a></span>    <a class="code hl_struct" href="structMutexGuard_1_1ConstScopedAccess.html">ConstScopedAccess</a> <a class="code hl_function" href="classMutexGuard.html#a66f126af32e5c1d8030ad73981f7c641">lock</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_struct" href="structMutexGuard_1_1ConstScopedAccess.html">ConstScopedAccess</a>(value, mutex); }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    T value;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">mutable</span> std::mutex mutex;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classMutexGuard.html#aeff1ef5fe069e69cebbacd9d33c1bca6">   76</a></span>    <a class="code hl_struct" href="structMutexGuard_1_1ConstScopedAccess.html">ConstScopedAccess</a> <a class="code hl_function" href="classMutexGuard.html#aeff1ef5fe069e69cebbacd9d33c1bca6">const_lock</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structMutexGuard_1_1ConstScopedAccess.html">ConstScopedAccess</a>(value, mutex);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    T value;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">mutable</span> std::mutex mutex;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
 </div>
 <div class="ttc" id="aclassMutexGuard_html_a33d05e7a52a4e0be96f67e3e610b4435"><div class="ttname"><a href="classMutexGuard.html#a33d05e7a52a4e0be96f67e3e610b4435">MutexGuard::MutexGuard</a></div><div class="ttdeci">MutexGuard(Args &amp;&amp;... args) noexcept</div><div class="ttdef"><b>Definition</b> MutexGuard.hpp:14</div></div>
 <div class="ttc" id="aclassMutexGuard_html_a4d94d284cdf53358c583b0d65c8a890c"><div class="ttname"><a href="classMutexGuard.html#a4d94d284cdf53358c583b0d65c8a890c">MutexGuard::MutexGuard</a></div><div class="ttdeci">MutexGuard(MutexGuard &amp;&amp;) noexcept=default</div></div>
-<div class="ttc" id="aclassMutexGuard_html_a66f126af32e5c1d8030ad73981f7c641"><div class="ttname"><a href="classMutexGuard.html#a66f126af32e5c1d8030ad73981f7c641">MutexGuard::lock</a></div><div class="ttdeci">ConstScopedAccess lock() const</div><div class="ttdef"><b>Definition</b> MutexGuard.hpp:76</div></div>
 <div class="ttc" id="aclassMutexGuard_html_a941a98461d00f530dd2149b8e98e0d9b"><div class="ttname"><a href="classMutexGuard.html#a941a98461d00f530dd2149b8e98e0d9b">MutexGuard::lock</a></div><div class="ttdeci">ScopedAccess lock()</div><div class="ttdef"><b>Definition</b> MutexGuard.hpp:49</div></div>
 <div class="ttc" id="aclassMutexGuard_html_a9995eca0de182a0604176d0db0d85bd7"><div class="ttname"><a href="classMutexGuard.html#a9995eca0de182a0604176d0db0d85bd7">MutexGuard::~MutexGuard</a></div><div class="ttdeci">~MutexGuard()=default</div></div>
 <div class="ttc" id="aclassMutexGuard_html_abc967ab126ceee9dc8ba616b30809eae"><div class="ttname"><a href="classMutexGuard.html#abc967ab126ceee9dc8ba616b30809eae">MutexGuard::MutexGuard</a></div><div class="ttdeci">MutexGuard(T &amp;&amp;value) noexcept</div><div class="ttdef"><b>Definition</b> MutexGuard.hpp:11</div></div>
+<div class="ttc" id="aclassMutexGuard_html_aeff1ef5fe069e69cebbacd9d33c1bca6"><div class="ttname"><a href="classMutexGuard.html#aeff1ef5fe069e69cebbacd9d33c1bca6">MutexGuard::const_lock</a></div><div class="ttdeci">ConstScopedAccess const_lock() const</div><div class="ttdef"><b>Definition</b> MutexGuard.hpp:76</div></div>
 <div class="ttc" id="astructMutexGuard_1_1ConstScopedAccess_html"><div class="ttname"><a href="structMutexGuard_1_1ConstScopedAccess.html">MutexGuard::ConstScopedAccess</a></div><div class="ttdef"><b>Definition</b> MutexGuard.hpp:51</div></div>
 <div class="ttc" id="astructMutexGuard_1_1ConstScopedAccess_html_a483a2f4a1718cbb0db6c7dada2077963"><div class="ttname"><a href="structMutexGuard_1_1ConstScopedAccess.html#a483a2f4a1718cbb0db6c7dada2077963">MutexGuard::ConstScopedAccess::ConstScopedAccess</a></div><div class="ttdeci">ConstScopedAccess(ConstScopedAccess &amp;&amp;) noexcept=default</div></div>
-<div class="ttc" id="astructMutexGuard_1_1ConstScopedAccess_html_a8d570a65a1872a5241f0ea19eb8f848d"><div class="ttname"><a href="structMutexGuard_1_1ConstScopedAccess.html#a8d570a65a1872a5241f0ea19eb8f848d">MutexGuard::ConstScopedAccess::~ConstScopedAccess</a></div><div class="ttdeci">~ConstScopedAccess()=delete</div></div>
 <div class="ttc" id="astructMutexGuard_1_1ConstScopedAccess_html_a9db9e0b115efd6a845922f51405daaf1"><div class="ttname"><a href="structMutexGuard_1_1ConstScopedAccess.html#a9db9e0b115efd6a845922f51405daaf1">MutexGuard::ConstScopedAccess::operator[]</a></div><div class="ttdeci">const auto &amp; operator[](Index &amp;&amp;index)</div><div class="ttdef"><b>Definition</b> MutexGuard.hpp:65</div></div>
 <div class="ttc" id="astructMutexGuard_1_1ConstScopedAccess_html_aba5afe3dfe082d8212d8cbdbac9bb3d2"><div class="ttname"><a href="structMutexGuard_1_1ConstScopedAccess.html#aba5afe3dfe082d8212d8cbdbac9bb3d2">MutexGuard::ConstScopedAccess::ConstScopedAccess</a></div><div class="ttdeci">ConstScopedAccess(const T &amp;value, std::mutex &amp;mutex)</div><div class="ttdef"><b>Definition</b> MutexGuard.hpp:52</div></div>
+<div class="ttc" id="astructMutexGuard_1_1ConstScopedAccess_html_ad1b7d75125f9d4af819d2b2d0a92fc97"><div class="ttname"><a href="structMutexGuard_1_1ConstScopedAccess.html#ad1b7d75125f9d4af819d2b2d0a92fc97">MutexGuard::ConstScopedAccess::~ConstScopedAccess</a></div><div class="ttdeci">~ConstScopedAccess()=default</div></div>
 <div class="ttc" id="astructMutexGuard_1_1ConstScopedAccess_html_ad63d848111ab561276056763ca259f4d"><div class="ttname"><a href="structMutexGuard_1_1ConstScopedAccess.html#ad63d848111ab561276056763ca259f4d">MutexGuard::ConstScopedAccess::operator*</a></div><div class="ttdeci">const T &amp; operator*()</div><div class="ttdef"><b>Definition</b> MutexGuard.hpp:62</div></div>
 <div class="ttc" id="astructMutexGuard_1_1ScopedAccess_html"><div class="ttname"><a href="structMutexGuard_1_1ScopedAccess.html">MutexGuard::ScopedAccess</a></div><div class="ttdef"><b>Definition</b> MutexGuard.hpp:24</div></div>
 <div class="ttc" id="astructMutexGuard_1_1ScopedAccess_html_a0dbded754e17bab210c3731184c10164"><div class="ttname"><a href="structMutexGuard_1_1ScopedAccess.html#a0dbded754e17bab210c3731184c10164">MutexGuard::ScopedAccess::operator[]</a></div><div class="ttdeci">auto &amp; operator[](Index &amp;&amp;index)</div><div class="ttdef"><b>Definition</b> MutexGuard.hpp:38</div></div>

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['function_5fname_0',['FUNCTION_NAME',['../Profiling_8hpp.html#a1177794eea3a055773ac1cc983f8684c',1,'Profiling.hpp']]]
+  ['combine_0',['COMBINE',['../Profiling_8hpp.html#a7df5abefd879020edfa5d730c36c8dd5',1,'Profiling.hpp']]],
+  ['combine2_1',['COMBINE2',['../Profiling_8hpp.html#ae62415c6e146cab1f66ac28e877d4cac',1,'Profiling.hpp']]],
+  ['combined_5ferror_2',['COMBINED_ERROR',['../Errors_8hpp.html#a0331e844b1f3b2488b75a0e6bda060f4',1,'Errors.hpp']]]
 ];

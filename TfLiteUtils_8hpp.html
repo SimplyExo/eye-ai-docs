@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9" />
 		<meta name="generator" content="Doxygen 1.13.2" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>eye-ai: include/EyeAICore/tflite/TfLiteUtils.hpp File Reference</title>
+		<title>EyeAI: include/EyeAICore/tflite/TfLiteUtils.hpp File Reference</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -151,7 +151,7 @@
 							</td>
 							<td id="projectalign" style="padding-left: 0.5em">
 								<div id="projectname">
-									eye-ai
+									EyeAI
 								</div>
 							</td>
 						</tr>
@@ -229,7 +229,7 @@ $(function(){initNavTree('TfLiteUtils_8hpp.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">TfLiteUtils.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="Operators_8hpp_source.html">EyeAICore/Operators.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="TensorBuffer_8hpp_source.html">EyeAICore/TensorBuffer.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Errors_8hpp_source.html">EyeAICore/utils/Errors.hpp</a>&quot;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;optional&gt;</code><br />
@@ -240,12 +240,12 @@ $(function(){initNavTree('TfLiteUtils_8hpp.html',''); initResizable(true); });
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for TfLiteUtils.hpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="TfLiteUtils_8hpp__incl.svg" width="1123" height="219"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="TfLiteUtils_8hpp__incl.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="TfLiteUtils_8hpp__dep__incl.svg" width="851" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="TfLiteUtils_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="TfLiteUtils_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -279,11 +279,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTfLiteInvokeInterpreterError.html">TfLiteInvokeInterpreterError</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInvalidInputFormatForOperator.html">InvalidInputFormatForOperator</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUnexpectedOperatorOutputFormat.html">UnexpectedOperatorOutputFormat</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInvalidInputFormatForModel.html">InvalidInputFormatForModel</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInvalidOutputFormatForModel.html">InvalidOutputFormatForModel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -324,8 +322,8 @@ Functions</h2></td></tr>
 <tr class="separator:ab0ac5d13c6c5605745162acc3a6824f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25abe832a503e8cae887b6beb4a28186" id="r_a25abe832a503e8cae887b6beb4a28186"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25abe832a503e8cae887b6beb4a28186">COMBINED_ERROR</a> (TfLiteCreateRuntimeError, <a class="el" href="structTfLiteCreateInterpreterError.html">TfLiteCreateInterpreterError</a>, <a class="el" href="structTfLiteAllocateTensorsError.html">TfLiteAllocateTensorsError</a>)</td></tr>
 <tr class="separator:a25abe832a503e8cae887b6beb4a28186"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3913b874294810d3f573b76d620a120e" id="r_a3913b874294810d3f573b76d620a120e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3913b874294810d3f573b76d620a120e">COMBINED_ERROR</a> (TfLiteRunInferenceError, <a class="el" href="structOperatorError.html">OperatorError</a>, TfLiteLoadInputError, <a class="el" href="structTfLiteInvokeInterpreterError.html">TfLiteInvokeInterpreterError</a>, TfLiteReadOutputError, <a class="el" href="structInvalidInputFormatForOperator.html">InvalidInputFormatForOperator</a>, <a class="el" href="structUnexpectedOperatorOutputFormat.html">UnexpectedOperatorOutputFormat</a>, <a class="el" href="structInvalidInputFormatForModel.html">InvalidInputFormatForModel</a>)</td></tr>
-<tr class="separator:a3913b874294810d3f573b76d620a120e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a942235521a29370ff9f2eef919458ffb" id="r_a942235521a29370ff9f2eef919458ffb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a942235521a29370ff9f2eef919458ffb">COMBINED_ERROR</a> (TfLiteRunInferenceError, TfLiteLoadInputError, <a class="el" href="structTfLiteInvokeInterpreterError.html">TfLiteInvokeInterpreterError</a>, TfLiteReadOutputError, <a class="el" href="structInvalidInputFormatForModel.html">InvalidInputFormatForModel</a>, <a class="el" href="structInvalidOutputFormatForModel.html">InvalidOutputFormatForModel</a>)</td></tr>
+<tr class="separator:a942235521a29370ff9f2eef919458ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aba4bc2e7ce88b1dbb235189c23c8c0bb" name="aba4bc2e7ce88b1dbb235189c23c8c0bb"></a>
@@ -602,8 +600,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3913b874294810d3f573b76d620a120e" name="a3913b874294810d3f573b76d620a120e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3913b874294810d3f573b76d620a120e">&#9670;&#160;</a></span>COMBINED_ERROR() <span class="overload">[10/10]</span></h2>
+<a id="a942235521a29370ff9f2eef919458ffb" name="a942235521a29370ff9f2eef919458ffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a942235521a29370ff9f2eef919458ffb">&#9670;&#160;</a></span>COMBINED_ERROR() <span class="overload">[10/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -612,11 +610,6 @@ Functions</h2></td></tr>
           <td class="memname">COMBINED_ERROR </td>
           <td>(</td>
           <td class="paramtype">TfLiteRunInferenceError</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structOperatorError.html">OperatorError</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -636,17 +629,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structInvalidInputFormatForOperator.html">InvalidInputFormatForOperator</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+          <td class="paramtype"><a class="el" href="structInvalidInputFormatForModel.html">InvalidInputFormatForModel</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structUnexpectedOperatorOutputFormat.html">UnexpectedOperatorOutputFormat</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structInvalidInputFormatForModel.html">InvalidInputFormatForModel</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="structInvalidOutputFormatForModel.html">InvalidOutputFormatForModel</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

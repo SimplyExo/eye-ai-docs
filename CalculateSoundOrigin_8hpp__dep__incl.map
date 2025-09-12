@@ -1,0 +1,7 @@
+<map id="include/EyeAICore/audio/CalculateSoundOrigin.hpp" name="include/EyeAICore/audio/CalculateSoundOrigin.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="101,5,277,48"/>
+<area shape="rect" id="Node000002" href="$CalculateSoundOrigin_8cpp.html" title=" " alt="" coords="5,96,176,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,61,115,97,112,93,153,57"/>
+<area shape="rect" id="Node000003" href="$SpatialAudio_8cpp.html" title=" " alt="" coords="200,104,376,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,57,276,102,272,106,222,61"/>
+</map>

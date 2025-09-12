@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['server_0',['Server',['../EyeAIServer_Server.html',1,'EyeAIServer']]],
+  ['server_0',['Server',['../EyeAIServer_Server.html',1,'']]],
   ['sources_1',['AI Model sources',['../AIModelSources.html',1,'EyeAIApp']]]
 ];

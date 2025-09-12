@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unexpectedoperatoroutputformat_0',['UnexpectedOperatorOutputFormat',['../structUnexpectedOperatorOutputFormat.html',1,'']]]
+  ['yolomodel_0',['YoloModel',['../classYoloModel.html',1,'']]]
 ];

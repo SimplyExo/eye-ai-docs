@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9" />
 		<meta name="generator" content="Doxygen 1.13.2" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>eye-ai: include/EyeAICore/Operators.hpp File Reference</title>
+		<title>EyeAI: include/EyeAICore/Operators.hpp File Reference</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -151,7 +151,7 @@
 							</td>
 							<td id="projectalign" style="padding-left: 0.5em">
 								<div id="projectname">
-									eye-ai
+									EyeAI
 								</div>
 							</td>
 						</tr>
@@ -224,72 +224,38 @@ $(function(){initNavTree('Operators_8hpp.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Operators.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;array&gt;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;optional&gt;</code><br />
-<code>#include &lt;span&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="TensorBuffer_8hpp_source.html">EyeAICore/TensorBuffer.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Operators.hpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Operators_8hpp__incl.svg" width="562" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="Operators_8hpp__incl.svg" width="402" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="Operators_8hpp__dep__incl.svg" width="1006" height="368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="Operators_8hpp__dep__incl.svg" width="648" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="Operators_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOperatorError.html">OperatorError</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOperatorBase.html">OperatorBase</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOperator.html">Operator&lt; Input, Output &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOperatorChain.html">OperatorChain&lt; Ops &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelativeDepthPostOperator.html">RelativeDepthPostOperator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">rescales values from [min, max] to [0, 1]  <a href="classRelativeDepthPostOperator.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMiDaSImageOperator.html">MiDaSImageOperator</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classYoloImageOperator.html">YoloImageOperator</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:aa0a7e33458d9b79c2e5f7025c6637342" id="r_aa0a7e33458d9b79c2e5f7025c6637342"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0a7e33458d9b79c2e5f7025c6637342">FloatTensorFormat</a> : std::uint8_t { <br />
-&#160;&#160;<a class="el" href="#aa0a7e33458d9b79c2e5f7025c6637342ade88f81b677c85ebc1a8a1eb48d1dcac">ImageRGB255Float</a>
-, <a class="el" href="#aa0a7e33458d9b79c2e5f7025c6637342abd046c67da9267af74bfaa515fa95f8b">MiDaSImageRGBFloat</a>
-, <a class="el" href="#aa0a7e33458d9b79c2e5f7025c6637342ab7f6c9b433fe45c4fda147f55739c4ff">YoloImageRGBFloat</a>
-, <a class="el" href="#aa0a7e33458d9b79c2e5f7025c6637342a01611b79e5965f1a9f16c9eae9b7aa7b">RelativeDepth</a>
-, <br />
-&#160;&#160;<a class="el" href="#aa0a7e33458d9b79c2e5f7025c6637342aa634373ab470d2b03b058cb214522056">RawRelativeDepth</a>
-, <a class="el" href="#aa0a7e33458d9b79c2e5f7025c6637342a53a5d4b33082c13c50e54f07e7b40b33">YoloOutput</a>
-<br />
- }</td></tr>
-<tr class="separator:aa0a7e33458d9b79c2e5f7025c6637342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9a62832ca56fd2f3129bac2434cab9a5" id="r_a9a62832ca56fd2f3129bac2434cab9a5"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a62832ca56fd2f3129bac2434cab9a5">format_float_tensor_format</a> (<a class="el" href="#aa0a7e33458d9b79c2e5f7025c6637342">FloatTensorFormat</a> format)</td></tr>
-<tr class="separator:a9a62832ca56fd2f3129bac2434cab9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47303367ad517dcf64f4e7540804887e" id="r_a47303367ad517dcf64f4e7540804887e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a01611b79e5965f1a9f16c9eae9b7aa7b">FloatTensorFormat::RelativeDepth</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47303367ad517dcf64f4e7540804887e">raw_relative_depth_post_operator</a> (<a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342aa634373ab470d2b03b058cb214522056">FloatTensorFormat::RawRelativeDepth</a> &gt; &amp;input)</td></tr>
+<tr class="separator:a47303367ad517dcf64f4e7540804887e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb2d3f05480786fc9a1b7164d4c5bab8" id="r_aeb2d3f05480786fc9a1b7164d4c5bab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342afcea03a21ed03a637c55a7b9660ef2a4">FloatTensorFormat::MetricDepth</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb2d3f05480786fc9a1b7164d4c5bab8">rel2abs_operator</a> (<a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342aa634373ab470d2b03b058cb214522056">FloatTensorFormat::RawRelativeDepth</a> &gt; &amp;input, <a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a825b24f1cf966f51b2fc9d121a8a04a3">FloatTensorFormat::Rel2AbsDepthCoefficientOutput</a> &gt; &amp;coeffs)</td></tr>
+<tr class="separator:aeb2d3f05480786fc9a1b7164d4c5bab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816ceef2212dec50e57f6581bff47e60" id="r_a816ceef2212dec50e57f6581bff47e60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a7e619d8c8c89ac29f7500c205fb4fb2d">FloatTensorFormat::MiDaSImageRGB</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a816ceef2212dec50e57f6581bff47e60">midas_image_operator</a> (<a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a6c47054d1fb2bbbfbbedccd776b6d9fa">FloatTensorFormat::ImageRGB255</a> &gt; &amp;input)</td></tr>
+<tr class="separator:a816ceef2212dec50e57f6581bff47e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ef38d46957d9c8cedfa74d9e70c876" id="r_ae9ef38d46957d9c8cedfa74d9e70c876"><td class="memItemLeft" align="right" valign="top"><a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342af83a64533665636edf3dd993d09e6017">FloatTensorFormat::YoloImageRGB</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9ef38d46957d9c8cedfa74d9e70c876">yolo_image_operator</a> (<a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a6c47054d1fb2bbbfbbedccd776b6d9fa">FloatTensorFormat::ImageRGB255</a> &gt; &amp;input)</td></tr>
+<tr class="separator:ae9ef38d46957d9c8cedfa74d9e70c876"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="aa0a7e33458d9b79c2e5f7025c6637342" name="aa0a7e33458d9b79c2e5f7025c6637342"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0a7e33458d9b79c2e5f7025c6637342">&#9670;&#160;</a></span>FloatTensorFormat</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a816ceef2212dec50e57f6581bff47e60" name="a816ceef2212dec50e57f6581bff47e60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816ceef2212dec50e57f6581bff47e60">&#9670;&#160;</a></span>midas_image_operator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,46 +264,97 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="#aa0a7e33458d9b79c2e5f7025c6637342">FloatTensorFormat</a> : std::uint8_t</td>
+          <td class="memname"><a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a7e619d8c8c89ac29f7500c205fb4fb2d">FloatTensorFormat::MiDaSImageRGB</a> &gt; midas_image_operator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a6c47054d1fb2bbbfbbedccd776b6d9fa">FloatTensorFormat::ImageRGB255</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa0a7e33458d9b79c2e5f7025c6637342ade88f81b677c85ebc1a8a1eb48d1dcac" name="aa0a7e33458d9b79c2e5f7025c6637342ade88f81b677c85ebc1a8a1eb48d1dcac"></a>ImageRGB255Float&#160;</td><td class="fielddoc"><p>3 floats for r, g, b, all in range [0.f, 255.f] </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa0a7e33458d9b79c2e5f7025c6637342abd046c67da9267af74bfaa515fa95f8b" name="aa0a7e33458d9b79c2e5f7025c6637342abd046c67da9267af74bfaa515fa95f8b"></a>MiDaSImageRGBFloat&#160;</td><td class="fielddoc"><p>3 floats for r, g, b, with mean of {123.675f, 116.28f, 103.53f} and standard deviation of {58.395f, 57.12f, 57.375f} </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa0a7e33458d9b79c2e5f7025c6637342ab7f6c9b433fe45c4fda147f55739c4ff" name="aa0a7e33458d9b79c2e5f7025c6637342ab7f6c9b433fe45c4fda147f55739c4ff"></a>YoloImageRGBFloat&#160;</td><td class="fielddoc"><p>3 floats for r, g, b, all in range [0.f, 1.f] </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa0a7e33458d9b79c2e5f7025c6637342a01611b79e5965f1a9f16c9eae9b7aa7b" name="aa0a7e33458d9b79c2e5f7025c6637342a01611b79e5965f1a9f16c9eae9b7aa7b"></a>RelativeDepth&#160;</td><td class="fielddoc"><p>1 float per pixel for relative depth in range [0.f, 1.f] </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa0a7e33458d9b79c2e5f7025c6637342aa634373ab470d2b03b058cb214522056" name="aa0a7e33458d9b79c2e5f7025c6637342aa634373ab470d2b03b058cb214522056"></a>RawRelativeDepth&#160;</td><td class="fielddoc"><p>1 float per pixel for relative depth, all values possible </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa0a7e33458d9b79c2e5f7025c6637342a53a5d4b33082c13c50e54f07e7b40b33" name="aa0a7e33458d9b79c2e5f7025c6637342a53a5d4b33082c13c50e54f07e7b40b33"></a>YoloOutput&#160;</td><td class="fielddoc"><p>special yolo output of detected objects and their confidence </p>
-</td></tr>
-</table>
+<p>normalizes rgb input values (3 floats for r, g and b) based on their mean and standard deviation values </p>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a9a62832ca56fd2f3129bac2434cab9a5" name="a9a62832ca56fd2f3129bac2434cab9a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a62832ca56fd2f3129bac2434cab9a5">&#9670;&#160;</a></span>format_float_tensor_format()</h2>
+<a id="a47303367ad517dcf64f4e7540804887e" name="a47303367ad517dcf64f4e7540804887e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47303367ad517dcf64f4e7540804887e">&#9670;&#160;</a></span>raw_relative_depth_post_operator()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string_view format_float_tensor_format </td>
+          <td class="memname"><a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a01611b79e5965f1a9f16c9eae9b7aa7b">FloatTensorFormat::RelativeDepth</a> &gt; raw_relative_depth_post_operator </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#aa0a7e33458d9b79c2e5f7025c6637342">FloatTensorFormat</a></td>          <td class="paramname"><span class="paramname"><em>format</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342aa634373ab470d2b03b058cb214522056">FloatTensorFormat::RawRelativeDepth</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb2d3f05480786fc9a1b7164d4c5bab8" name="aeb2d3f05480786fc9a1b7164d4c5bab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb2d3f05480786fc9a1b7164d4c5bab8">&#9670;&#160;</a></span>rel2abs_operator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342afcea03a21ed03a637c55a7b9660ef2a4">FloatTensorFormat::MetricDepth</a> &gt; rel2abs_operator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342aa634373ab470d2b03b058cb214522056">FloatTensorFormat::RawRelativeDepth</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>input</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a825b24f1cf966f51b2fc9d121a8a04a3">FloatTensorFormat::Rel2AbsDepthCoefficientOutput</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>coeffs</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9ef38d46957d9c8cedfa74d9e70c876" name="ae9ef38d46957d9c8cedfa74d9e70c876"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ef38d46957d9c8cedfa74d9e70c876">&#9670;&#160;</a></span>yolo_image_operator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342af83a64533665636edf3dd993d09e6017">FloatTensorFormat::YoloImageRGB</a> &gt; yolo_image_operator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a>&lt; <a class="el" href="TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a6c47054d1fb2bbbfbbedccd776b6d9fa">FloatTensorFormat::ImageRGB255</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>input</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
