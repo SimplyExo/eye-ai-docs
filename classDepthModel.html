@@ -247,7 +247,7 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a71883520d55fe45cff60f60ed1978ce7" id="r_a71883520d55fe45cff60f60ed1978ce7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71883520d55fe45cff60f60ed1978ce7">DepthModel</a> (std::unique_ptr&lt; <a class="el" href="classTfLiteRuntime.html">TfLiteRuntime</a> &gt; &amp;&amp;runtime)</td></tr>
-<tr class="memdesc:a71883520d55fe45cff60f60ed1978ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">see <a class="el" href="#ab032d619cab7af3628508c9c56a0979d">DepthModel::create</a>  <br /></td></tr>
+<tr class="memdesc:a71883520d55fe45cff60f60ed1978ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">see <a class="el" href="#a80cd34af4bb764b35005545b1ac994d4">DepthModel::create</a>  <br /></td></tr>
 <tr class="separator:a71883520d55fe45cff60f60ed1978ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94662211166762b0dff23d0522075bb0" id="r_a94662211166762b0dff23d0522075bb0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94662211166762b0dff23d0522075bb0">DepthModel</a> (<a class="el" href="classDepthModel.html">DepthModel</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a94662211166762b0dff23d0522075bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,8 +270,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab032d619cab7af3628508c9c56a0979d" id="r_ab032d619cab7af3628508c9c56a0979d"><td class="memItemLeft" align="right" valign="top">static tl::expected&lt; std::unique_ptr&lt; <a class="el" href="classDepthModel.html">DepthModel</a> &gt;, TfLiteCreateRuntimeError &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab032d619cab7af3628508c9c56a0979d">create</a> (std::vector&lt; int8_t &gt; &amp;&amp;model_data, std::string_view gpu_delegate_serialization_dir, std::string_view model_token, <a class="el" href="TfLiteRuntime_8hpp.html#a0f81401a8cd180af6f4eae3afd0858fd">TfLiteLogWarningCallback</a> log_warning_callback, <a class="el" href="TfLiteRuntime_8hpp.html#ae10cf5db164646559fbb4d9236808f87">TfLiteLogErrorCallback</a> log_error_callback)</td></tr>
-<tr class="separator:ab032d619cab7af3628508c9c56a0979d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80cd34af4bb764b35005545b1ac994d4" id="r_a80cd34af4bb764b35005545b1ac994d4"><td class="memItemLeft" align="right" valign="top">static tl::expected&lt; std::unique_ptr&lt; <a class="el" href="classDepthModel.html">DepthModel</a> &gt;, TfLiteCreateRuntimeError &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80cd34af4bb764b35005545b1ac994d4">create</a> (std::vector&lt; int8_t &gt; &amp;&amp;model_data, std::string_view gpu_delegate_serialization_dir, std::string_view model_token, <a class="el" href="TfLiteRuntime_8hpp.html#a0f81401a8cd180af6f4eae3afd0858fd">TfLiteLogWarningCallback</a> log_warning_callback, <a class="el" href="TfLiteRuntime_8hpp.html#ae10cf5db164646559fbb4d9236808f87">TfLiteLogErrorCallback</a> log_error_callback, bool enable_npu, std::string npu_skel_directory)</td></tr>
+<tr class="separator:a80cd34af4bb764b35005545b1ac994d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A utility class for running depth estimation models like MiDaS. </p>
@@ -290,7 +290,7 @@ Static Public Member Functions</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line"> tl::expected&lt;</div>
 <div class="line">        <a class="code hl_typedef" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer&lt;FloatTensorFormat::RawRelativeDepth&gt;</a>,</div>
 <div class="line">        TfLiteRunInferenceError&gt;</div>
-<div class="ttc" id="aTensorBuffer_8hpp_html_af6a91a7daa9796c6e1442bfd5cc810d0"><div class="ttname"><a href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a></div><div class="ttdeci">TensorBuffer&lt; float, FloatTensorFormat, FORMAT &gt; FloatTensorBuffer</div><div class="ttdef"><b>Definition</b> TensorBuffer.hpp:102</div></div>
+<div class="ttc" id="aTensorBuffer_8hpp_html_af6a91a7daa9796c6e1442bfd5cc810d0"><div class="ttname"><a href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a></div><div class="ttdeci">TensorBuffer&lt; float, FloatTensorFormat, FORMAT &gt; FloatTensorBuffer</div><div class="ttdef"><b>Definition</b> TensorBuffer.hpp:106</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -335,7 +335,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>see <a class="el" href="#ab032d619cab7af3628508c9c56a0979d">DepthModel::create</a> </p>
+<p>see <a class="el" href="#a80cd34af4bb764b35005545b1ac994d4">DepthModel::create</a> </p>
 
 </div>
 </div>
@@ -415,8 +415,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab032d619cab7af3628508c9c56a0979d" name="ab032d619cab7af3628508c9c56a0979d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab032d619cab7af3628508c9c56a0979d">&#9670;&#160;</a></span>create()</h2>
+<a id="a80cd34af4bb764b35005545b1ac994d4" name="a80cd34af4bb764b35005545b1ac994d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80cd34af4bb764b35005545b1ac994d4">&#9670;&#160;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -447,7 +447,17 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="TfLiteRuntime_8hpp.html#ae10cf5db164646559fbb4d9236808f87">TfLiteLogErrorCallback</a></td>          <td class="paramname"><span class="paramname"><em>log_error_callback</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="TfLiteRuntime_8hpp.html#ae10cf5db164646559fbb4d9236808f87">TfLiteLogErrorCallback</a></td>          <td class="paramname"><span class="paramname"><em>log_error_callback</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enable_npu</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>npu_skel_directory</em></span>&#160;)</td>
         </tr>
       </table>
   </td>

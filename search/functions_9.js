@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['objectaudiosourcedata_0',['ObjectAudioSourceData',['../structObjectAudioSourceData.html#a8ecf6e9dfe650e3cb75a3c7202e7562e',1,'ObjectAudioSourceData']]],
+  ['objectaudiosourcedata_0',['ObjectAudioSourceData',['../structObjectAudioSourceData.html#ac2a032f545cd5a9270539cf334a6c020',1,'ObjectAudioSourceData']]],
   ['objecttracker_1',['ObjectTracker',['../classObjectTracker.html#aa099e7ace97a7d77447a5a02e14dfda5',1,'ObjectTracker']]],
   ['operator_21_3d_2',['operator!=',['../structCombinedError.html#a308609cd8e5bca8937f000b0a60371c9',1,'CombinedError']]],
   ['operator_2a_3',['operator*',['../structMutexGuard_1_1ScopedAccess.html#a314d8e020729b0e9391c4dc2bef5a19c',1,'MutexGuard::ScopedAccess::operator*()'],['../structMutexGuard_1_1ConstScopedAccess.html#ad63d848111ab561276056763ca259f4d',1,'MutexGuard::ConstScopedAccess::operator*()']]],

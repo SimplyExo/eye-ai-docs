@@ -227,7 +227,12 @@ $(function(){initNavTree('MetricDepth.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Converting relative depth estimation to absolute(/metric) depth using SUNRGB-D (or DIODE) dataset</p>
-<h2>Training the Rel2Abs model</h2>
+<p>The Rel2Abs coefficients used in the app are in <code>rel2abs_training/rel2abs_coeffs.npy</code></p>
+<p>This is the accuracy of the Rel2Abs coefficients on the validation data of the SUNRGB-D dataset.</p>
+<p><code>Average error across dataset: 0.4956 meters</code></p>
+<p><code>Median per image average error across dataset: 0.2355 meters</code></p>
+<p><img src="rel2abs_training/avg_error_distribution.png" alt="" class="inline"/></p>
+<h2>Finding the optimal Rel2Abs coefficients</h2>
 <p>Installing python requirements for training the Rel2Abs model:</p>
 <p>It is recommended to use python 3.11!</p>
 <div class="fragment"><div class="line">cd rel2abs_training</div>
@@ -240,8 +245,8 @@ $(function(){initNavTree('MetricDepth.html',''); initResizable(true); });
 <li>Download and extract the dataset:</li>
 </ol>
 <ul>
-<li>SUNRGB-D: <a href="https://rgbd.cs.princeton.edu">https://rgbd.cs.princeton.edu</a></li>
-<li>DIODE: <a href="https://diode-dataset.org">https://diode-dataset.org</a> (not recommended as images are not too usable, download testing data as sample)</li>
+<li>SUNRGB-D: <a href="https://rgbd.cs.princeton.edu">https://rgbd.cs.princeton.edu</a> (better fitting images, but less total images)</li>
+<li>DIODE: <a href="https://diode-dataset.org">https://diode-dataset.org</a> (more total images, but less fitting)</li>
 </ul>
 <ol type="1">
 <li><p class="startli">Prepare the dataset:</p>
@@ -250,12 +255,20 @@ $(function(){initNavTree('MetricDepth.html',''); initResizable(true); });
 <div class="line">./scripts/build_and_run_prepare_dataset.sh &lt;diode or sun_rgbd&gt; &lt;dataset_directory&gt; &lt;dataset_evaluation_directory&gt;</div>
 </div><!-- fragment --></li>
 </ol>
-<p>Running the Rel2Abs model training:</p>
+<p>(Optional) 3. Combine multiple datasets into one prepared dataset:</p>
+<p>Only if you want to have a larger, more diverse dataset that challenges the model to generalize.</p>
+<div class="fragment"><div class="line">python ./scripts/concat_prepared_datasets.py &lt;prepared_dataset_directory_1&gt; &lt;prepared_dataset_directory_2&gt; &lt;output_dataset_directory&gt;</div>
+</div><!-- fragment --><p>Running the Rel2Abs model training:</p>
 <div class="fragment"><div class="line">cd rel2abs_training</div>
 <div class="line">python train.py &lt;prepared_dataset_directory&gt;</div>
 </div><!-- fragment --><p>The model will be trained and exported as <code>rel2abs_model.tflite</code></p>
-<p><br  />
+<p>In order to see how the model performs, and what coefficients it uses:</p>
+<div class="fragment"><div class="line">cd rel2abs_training</div>
+<div class="line">python run.py &lt;raw_relative_depth_samples.npy&gt; &lt;rgbd_image_paths...&gt;</div>
+</div><!-- fragment --><p><br  />
 </p>
+<h2>Rel2Abs coefficients</h2>
+<p>In order to find the most optimal coefficients for the Rel2Abs convertion, we train a ai model that predicts these coefficients. After the training of the model, we can see the most optimal coefficients. The Rel2Abs AI-Model is not used within the app, just for discovering the coefficients.</p>
 <h2>Rel2Abs model documentation/specification</h2>
 <p>input shape: float32[256 * 256 * 4], RGB-D output shape: float32[5], polynomial coeffs for degree 4 polynomial function</p>
 <p>the input layer consists of 3 float32 rgb channels in sRGB colorspace in the range [-1, 1]. the fourth channel is a float32 relative depth channel in the range [-1, 1], that is fed the raw relative depth output of MiDaS (in the range of 0 to 1500), but remapped to [-1, 1]. Raw relative depth values larger than 1500 are clamped to 1500, as they are hard to encounter and have no practical relevence, as you need an object &lt;1cm close to the camera to produce such values, which is why clamping is not a problem here.</p>

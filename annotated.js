@@ -21,7 +21,6 @@ var annotated =
     [ "ProfileScopeRecord", "structProfileScopeRecord.html", "structProfileScopeRecord" ],
     [ "ProfilingFrame", "classProfilingFrame.html", "classProfilingFrame" ],
     [ "QuantizationElementsMismatch", "structQuantizationElementsMismatch.html", "structQuantizationElementsMismatch" ],
-    [ "Rel2AbsDepthModel", "classRel2AbsDepthModel.html", "classRel2AbsDepthModel" ],
     [ "SpatialAudio", "classSpatialAudio.html", "classSpatialAudio" ],
     [ "SpatialAudioSettings", "classSpatialAudioSettings.html", "classSpatialAudioSettings" ],
     [ "TensorBuffer", "structTensorBuffer.html", "structTensorBuffer" ],

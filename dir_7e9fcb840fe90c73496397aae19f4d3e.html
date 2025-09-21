@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9" />
 		<meta name="generator" content="Doxygen 1.13.2" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>EyeAI: /home/peter/github/eye-ai.workspaces/main/EyeAIServer Directory Reference</title>
+		<title>EyeAI: /home/peter/github/eye-ai.workspace/main/EyeAIServer Directory Reference</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -233,15 +233,18 @@ Directories</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Dies ist ein für Testzwecke erstelltes Programm zum emulieren einer EyeAI-Datenbrille. Ein zugehöriger Beispielclient liegt im Verzeichnis "Client" bei</p>
+<p>Dies ist ein für Testzwecke erstelltes Programm zum emulieren einer EyeAI-Datenbrille</p>
 <h1>Nutzung</h1>
 <p>Erstellen eines Virtual Environments mit allen Dependencies:</p>
 <div class="fragment"><div class="line">python3 -m venv venv/</div>
 <div class="line">source venv/bin/activate</div>
 <div class="line">pip3 install opencv-python flask flasgger</div>
-</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Vor dem Starten der Programme immer erst mit <code>source venv/bin/activate</code> das Virtual Environment aktivieren!</dd></dl>
+<div class="line">sudo ../venv/bin/python3 main.py # Root ist wichtig!</div>
+</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Vor dem Starten der Programme immer erst mit <code>source venv/bin/activate</code> das Virtual Environment aktivieren!</dd>
+<dd>
+Das Programm muss immer mit root gestartet werden, da Port 80 sonst nicht zugänglich ist!</dd></dl>
 <h1>API-Docs</h1>
-<p>Im Browser den Link <code><a href="http://localhost:3333/apidocs">http://localhost:3333/apidocs</a></code> öffnen </p>
+<p>Im Browser den Link <code><a href="http://localhost:8888/apidocs">http://localhost:8888/apidocs</a></code> öffnen </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -12,7 +12,9 @@ var TensorBuffer_8hpp =
       [ "Rel2AbsDepthInput", "TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342afe652b35b93a3612db319afb2d03289f", null ],
       [ "Rel2AbsDepthCoefficientOutput", "TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a825b24f1cf966f51b2fc9d121a8a04a3", null ],
       [ "MetricDepth", "TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342afcea03a21ed03a637c55a7b9660ef2a4", null ],
-      [ "YoloOutput", "TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a53a5d4b33082c13c50e54f07e7b40b33", null ]
+      [ "YoloOutput", "TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a53a5d4b33082c13c50e54f07e7b40b33", null ],
+      [ "NLPOutput", "TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342ae23fa509fcc5c9c93a34651f78154e67", null ],
+      [ "NLPInput", "TensorBuffer_8hpp.html#aa0a7e33458d9b79c2e5f7025c6637342a9733c2067ce99f14217af90f274bd510", null ]
     ] ],
     [ "format_float_tensor_format", "TensorBuffer_8hpp.html#a9a62832ca56fd2f3129bac2434cab9a5", null ]
 ];

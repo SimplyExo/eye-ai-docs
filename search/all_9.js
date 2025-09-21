@@ -8,5 +8,5 @@ var searchData=
   ['log_5fwarning_5fcallback_5',['log_warning_callback',['../structTfLiteReporterUserData.html#a6f2c8219d5f7ebc73843f1f29338c89f',1,'TfLiteReporterUserData']]],
   ['logerrorcallback_6',['logErrorCallback',['../classSpatialAudioSettings.html#a5acfe43ed71df318e8fa1e3bbee97f1c',1,'SpatialAudioSettings']]],
   ['loginfocallback_7',['logInfoCallback',['../classSpatialAudioSettings.html#a7fb26a19184286a36a6ce0a3d3d2866c',1,'SpatialAudioSettings']]],
-  ['lpalcresetdevicesoft_8',['LPALCRESETDEVICESOFT',['../AudioMain_8cpp.html#adcc1e59d6160f163b84377e0855c9f5d',1,'AudioMain.cpp']]]
+  ['lpalcresetdevicesoft_8',['LPALCRESETDEVICESOFT',['../AudioMain_8cpp.html#ab949fa6802c2c846c6c85da98286f798',1,'AudioMain.cpp']]]
 ];

@@ -1,14 +1,14 @@
 <map id="include/EyeAICore/audio/ObjectAudioSourceData.hpp" name="include/EyeAICore/audio/ObjectAudioSourceData.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="233,5,423,48"/>
-<area shape="rect" id="Node000002" href="$AudioMain_8hpp.html" title=" " alt="" coords="125,96,291,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,59,238,98,235,93,287,55"/>
-<area shape="rect" id="Node000004" href="$SpatialAudio_8cpp.html" title=" " alt="" coords="120,277,296,304"/>
-<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="364,57,397,94,426,138,435,162,439,186,436,209,425,231,404,247,371,260,291,279,290,274,370,255,401,242,421,228,431,207,434,186,430,163,421,140,393,97,360,60"/>
-<area shape="rect" id="Node000005" href="$AudioMain_8cpp.html" title=" " alt="" coords="246,195,410,221"/>
-<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="331,64,331,194,325,194,325,64"/>
-<area shape="rect" id="Node000003" href="$SpatialAudio_8hpp.html" title=" " alt="" coords="5,187,171,229"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="170,150,118,188,115,184,167,146"/>
-<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="211,154,211,277,205,277,205,154"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="250,146,313,192,309,196,246,150"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="133,236,191,275,188,279,130,241"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="246,5,453,50"/>
+<area shape="rect" id="Node000002" href="$AudioMain_8hpp.html" title=" " alt="" coords="133,98,313,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="309,61,255,100,252,95,306,57"/>
+<area shape="rect" id="Node000004" href="$SpatialAudio_8cpp.html" title=" " alt="" coords="125,283,318,311"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="388,59,423,96,454,142,465,166,469,190,466,214,454,237,433,253,400,266,318,285,317,280,399,261,431,248,450,234,461,213,464,191,459,167,450,144,419,100,384,62"/>
+<area shape="rect" id="Node000005" href="$AudioMain_8cpp.html" title=" " alt="" coords="260,199,440,227"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="352,65,352,199,347,199,347,65"/>
+<area shape="rect" id="Node000003" href="$SpatialAudio_8hpp.html" title=" " alt="" coords="5,191,185,235"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="182,154,127,192,124,188,179,150"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="225,158,224,283,219,283,220,158"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="267,149,333,196,330,201,263,154"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="142,242,203,280,200,285,139,246"/>
 </map>

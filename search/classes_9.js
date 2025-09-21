@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['rel2absdepthmodel_0',['Rel2AbsDepthModel',['../classRel2AbsDepthModel.html',1,'']]]
+  ['scopedaccess_0',['ScopedAccess',['../structMutexGuard_1_1ScopedAccess.html',1,'MutexGuard']]],
+  ['spatialaudio_1',['SpatialAudio',['../classSpatialAudio.html',1,'']]],
+  ['spatialaudiosettings_2',['SpatialAudioSettings',['../classSpatialAudioSettings.html',1,'']]]
 ];

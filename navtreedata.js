@@ -26,8 +26,14 @@ var NAVTREE =
 [
   [ "EyeAI", "index.html", [
     [ "eye-ai", "index.html", null ],
-    [ "Beschreibung", "md__2home_2peter_2github_2eye-ai_8workspaces_2main_2Beschreibung.html", null ],
+    [ "Beschreibung", "md__2home_2peter_2github_2eye-ai_8workspace_2main_2Beschreibung.html", null ],
     [ "EyeAICore", "md_README.html", "md_README" ],
+    [ "GoogleAIStudio", "md_docs_2GoogleAIStudioReadMe.html", null ],
+    [ "OCR", "md_docs_2OCRReadMe.html", null ],
+    [ "SpatialAudio", "md_docs_2SpatialAudioReadMe.html", null ],
+    [ "SpeechRecognition", "md_docs_2SpeechRecognitionReadMe.html", null ],
+    [ "Statemachine", "md_docs_2StateMachineReadMe.html", null ],
+    [ "TTS-Engine", "md_docs_2TTSEngineReadMe.html", null ],
     [ "EyeAIApp", "EyeAIApp.html", "EyeAIApp" ],
     [ "Server", "EyeAIServer_Server.html", null ],
     [ "C++ EyeAICore API", "usergroup0.html", [
@@ -40,7 +46,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AIModelSources.html",
-"classTensorType.html#acb27521eb64f78ccf139c99c1eb1ad66"
+"classTensorType.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type_0',['Type',['../classTensorType.html#a28cdb92524fefb6751542139159771cc',1,'TensorType']]]
+  ['npuconfiguration_0',['NpuConfiguration',['../TfLiteUtils_8hpp.html#af58645ffd10a431f69fd311629c92a1f',1,'TfLiteUtils.hpp']]]
 ];

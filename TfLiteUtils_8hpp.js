@@ -15,6 +15,11 @@ var TfLiteUtils_8hpp =
     [ "TfLiteInvokeInterpreterError", "structTfLiteInvokeInterpreterError.html", "structTfLiteInvokeInterpreterError" ],
     [ "InvalidInputFormatForModel", "structInvalidInputFormatForModel.html", "structInvalidInputFormatForModel" ],
     [ "InvalidOutputFormatForModel", "structInvalidOutputFormatForModel.html", "structInvalidOutputFormatForModel" ],
+    [ "NpuConfiguration", "TfLiteUtils_8hpp.html#af58645ffd10a431f69fd311629c92a1f", [
+      [ "MiDaS", "TfLiteUtils_8hpp.html#af58645ffd10a431f69fd311629c92a1fa82dfc6a2efda4d650360cc836023f52d", null ],
+      [ "rel2abs", "TfLiteUtils_8hpp.html#af58645ffd10a431f69fd311629c92a1fa270bb44d48fe399f425465c7eb9c9937", null ],
+      [ "Yolo", "TfLiteUtils_8hpp.html#af58645ffd10a431f69fd311629c92a1fab0720da0c837f4ce30312682e467d08a", null ]
+    ] ],
     [ "COMBINED_ERROR", "TfLiteUtils_8hpp.html#aba4bc2e7ce88b1dbb235189c23c8c0bb", null ],
     [ "COMBINED_ERROR", "TfLiteUtils_8hpp.html#ac949dc09bf1c0af53076d017b387b291", null ],
     [ "COMBINED_ERROR", "TfLiteUtils_8hpp.html#a25abe832a503e8cae887b6beb4a28186", null ],
@@ -26,6 +31,7 @@ var TfLiteUtils_8hpp =
     [ "COMBINED_ERROR", "TfLiteUtils_8hpp.html#ac592738a85baaabc2ddc2b5b73e93411", null ],
     [ "COMBINED_ERROR", "TfLiteUtils_8hpp.html#a942235521a29370ff9f2eef919458ffb", null ],
     [ "create_gpu_delegate", "TfLiteUtils_8hpp.html#acb772512bf5293e0a930aae03e8a4c94", null ],
+    [ "create_qnn_npu_delegate", "TfLiteUtils_8hpp.html#aaa841feed277010c0c5177595c293525", null ],
     [ "format_tflite_status", "TfLiteUtils_8hpp.html#afb2851d17cf7bd489ca993e24487c4fd", null ],
     [ "format_tflite_type", "TfLiteUtils_8hpp.html#acbfc9d639c2cd6e23947533e481a17b2", null ],
     [ "get_tensor_quantization", "TfLiteUtils_8hpp.html#a59b869dbae855598bd3e74f95316d816", null ],

@@ -226,15 +226,37 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">eye-ai </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__2home_2peter_2github_2eye-ai_8workspaces_2main_2README"></a></p>
+<div class="textblock"><p><a class="anchor" id="md__2home_2peter_2github_2eye-ai_8workspace_2main_2README"></a></p>
 <p>Bilderkennung einer Kamera, die Objekte in der Umgebung in Audio-Hinweise für den Benutzer umwandelt, damit dieser sich ohne Sicht bewegen kann.</p>
-<h2>Projekt-Plan:</h2>
-<h3>1. Schritt:</h3>
-<p>Erkennung von Objekten im Raum ohne Klassifizierung jedoch mit Messung der Entfernung. Dann Umwandlung in Ton mit Richtung. Wenn das Objekt nicht erkannt wird, wird stattdessen ein solider Block dahin gestellt, um zu verhindern, dass der Nutzer in etwas läuft. Not-Aus: Wenn das Programm nicht mitkommt, wird der Nutzer gewarnt, er solle sich erstmal nicht weiter bewegen, bis das Programm aufgehohlt hat.</p>
-<h3>2. Schritt:</h3>
-<p>Klassifizierung von Objekten, möglicherweise Ausgabe per Sprache. Möglichkeit der Ausgabe der Objekte im aktuellen Sichtfeld des Nutzers auf dessen Eingabe hin.</p>
-<h3>3. Schritt</h3>
-<p>Gesichtserkennung von bekannten Personen? Nachtsicht? </p>
+<p>Dokumentation in EyeAI Docs: <a href="https://simplyexo.github.io/eye-ai-docs">https://simplyexo.github.io/eye-ai-docs</a></p>
+<h2>Performance of EyeAIApp</h2>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone"><b>Smartphone</b>   </th><th class="markdownTableHeadNone"><b>Release date</b>   </th><th class="markdownTableHeadNone"><b>NPU enabled?</b>   </th><th class="markdownTableHeadNone"><b>MiDaS only / inference</b>   </th><th class="markdownTableHeadNone"><b>MiDaS with YOLO / inference</b>    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Samsung Galaxy S25   </td><td class="markdownTableBodyNone">2025   </td><td class="markdownTableBodyNone">✅   </td><td class="markdownTableBodyNone">4.6ms (217 FPS) / 2.25ms   </td><td class="markdownTableBodyNone">12ms (85 FPS), 17ms (58.8 FPS) / 8.5ms, 13ms    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Samsung Galaxy S25   </td><td class="markdownTableBodyNone">2025   </td><td class="markdownTableBodyNone">❌   </td><td class="markdownTableBodyNone">16ms (62 FPS) / 12.3ms   </td><td class="markdownTableBodyNone">25ms (40 FPS), 22.4ms (44.6 FPS) / 21.3ms, 13ms    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Samsung Galaxy S21   </td><td class="markdownTableBodyNone">2021   </td><td class="markdownTableBodyNone">✅ (quantized)   </td><td class="markdownTableBodyNone">10ms (100 FPS) / 2.3ms   </td><td class="markdownTableBodyNone">10ms (100 FPS), 80ms (12.5 FPS) / 3ms, 68ms    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Samsung Galaxy S21   </td><td class="markdownTableBodyNone">2021   </td><td class="markdownTableBodyNone">❌   </td><td class="markdownTableBodyNone">48ms (21 FPS) / 34.4ms   </td><td class="markdownTableBodyNone">94ms (10.5 FPS), 90ms (11 FPS) / 85ms, 77ms    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Fairphone 4 (no NPU)   </td><td class="markdownTableBodyNone">2021   </td><td class="markdownTableBodyNone">❌   </td><td class="markdownTableBodyNone">100ms (10 FPS) / 90ms   </td><td class="markdownTableBodyNone">200ms (5 FPS), 200ms (5 FPS) / 185ms, 175ms   </td></tr>
+</table>
+<h1>Bedienungsanleitung</h1>
+<h2>Sprachbefehle nutzen</h2>
+<p>Als Nutzer kann man mit natürlicher Sprache, nach einem Buttonclick in der App oder auf der EyeAIVision die Spracheingabe starten. Sofort kommuniziert man dann mit dem Vosk-Modell für Spracherkennung. Gibt man nun einen beliebigen Input, so erfolgt eine kurze Klassifizierung des Inputs.</p>
+<h2>Klassifizierungen</h2>
+<p>Es gibt verschiedene Möglichkeiten, wie unsere Modelle Input klassifizieren können.</p>
+<h3>1. Einstellungen</h3>
+<p>Gelangt man in die Einstellungen, so ist das Einstellungsmenü als interaktiver Dialog gestaltet, der alle Einstellungsoptionen diktiert und anschließend für jede Einstellung einen Anpassungsdialog bietet.</p>
+<h3>3. Texterkennung</h3>
+<p>Die Texterkennung erfolgt sofort auf Sprachbefehl sofern Text erkannt werden konnte.</p>
+<h3>4. Objektinformationen</h3>
+<p>Objektinformationen erfolgen ebenfalls, sofern das jeweilige angefragte Objekt erkannt wurde, sofort auf Befehl. Notwendig bei der Anfrage ist es dabei jedoch das gewünschte Objekt zu nennen.</p>
+<h3>5. Generelle Fragen</h3>
+<p>Wissensfragen, Fragen zum Alltag o.ä. werden hier beantwortet. Die Antwort findet sofort statt. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->

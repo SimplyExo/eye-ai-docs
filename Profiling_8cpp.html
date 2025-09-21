@@ -236,7 +236,7 @@ $(function(){initNavTree('Profiling_8cpp.html',''); initResizable(true); });
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Profiling.cpp:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Profiling_8cpp__incl.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="Profiling_8cpp__incl.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -259,8 +259,31 @@ Functions</h2></td></tr>
 <tr class="separator:a5df8f15adf409fecf6bdc6fd95a3ff56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67f443f8a4224739776a36c074adec09" id="r_a67f443f8a4224739776a36c074adec09"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67f443f8a4224739776a36c074adec09">get_last_object_profiling_frame_formatted</a> ()</td></tr>
 <tr class="separator:a67f443f8a4224739776a36c074adec09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b9f8c8456bb47ec68ebd8dc11456e1" id="r_ad7b9f8c8456bb47ec68ebd8dc11456e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classProfilingFrame.html">ProfilingFrame</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7b9f8c8456bb47ec68ebd8dc11456e1">get_audio_profiling_frame</a> ()</td></tr>
+<tr class="separator:ad7b9f8c8456bb47ec68ebd8dc11456e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b5e613321e5069bb9647ae123d65f7" id="r_a93b5e613321e5069bb9647ae123d65f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93b5e613321e5069bb9647ae123d65f7">set_last_audio_profiling_frame_formatted</a> (std::string &amp;&amp;formatted)</td></tr>
+<tr class="separator:a93b5e613321e5069bb9647ae123d65f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b36eb8b1a0864799279bb32c7368f53" id="r_a6b36eb8b1a0864799279bb32c7368f53"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b36eb8b1a0864799279bb32c7368f53">get_last_audio_profiling_frame_formatted</a> ()</td></tr>
+<tr class="separator:a6b36eb8b1a0864799279bb32c7368f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ad7b9f8c8456bb47ec68ebd8dc11456e1" name="ad7b9f8c8456bb47ec68ebd8dc11456e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7b9f8c8456bb47ec68ebd8dc11456e1">&#9670;&#160;</a></span>get_audio_profiling_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classProfilingFrame.html">ProfilingFrame</a> &amp; get_audio_profiling_frame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a81d780f23f0458c86cee902d689d5029" name="a81d780f23f0458c86cee902d689d5029"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81d780f23f0458c86cee902d689d5029">&#9670;&#160;</a></span>get_camera_profiling_frame()</h2>
 
@@ -293,6 +316,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>These four functions return global static variables (needed since NativeLib is loaded as a shared library, so a simple static variable does not work). Both <a class="el" href="classProfilingFrame.html" title="collection of profile records from different threads (lock-free thread-safe)">ProfilingFrame</a>'s are thread-safe </p>
+
+</div>
+</div>
+<a id="a6b36eb8b1a0864799279bb32c7368f53" name="a6b36eb8b1a0864799279bb32c7368f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b36eb8b1a0864799279bb32c7368f53">&#9670;&#160;</a></span>get_last_audio_profiling_frame_formatted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string get_last_audio_profiling_frame_formatted </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -357,6 +397,23 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="classProfilingFrame.html">ProfilingFrame</a> &amp; get_object_profiling_frame </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a93b5e613321e5069bb9647ae123d65f7" name="a93b5e613321e5069bb9647ae123d65f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b5e613321e5069bb9647ae123d65f7">&#9670;&#160;</a></span>set_last_audio_profiling_frame_formatted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_last_audio_profiling_frame_formatted </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>formatted</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

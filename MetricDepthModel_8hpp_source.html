@@ -233,89 +233,98 @@ $(function(){initNavTree('MetricDepthModel_8hpp_source.html',''); initResizable(
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="classDepthModel.html">DepthModel</a>;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">class </span><a class="code hl_class" href="classRel2AbsDepthModel.html">Rel2AbsDepthModel</a>;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classMetricDepthModel.html">   10</a></span><span class="keyword">class </span><a class="code hl_function" href="classMetricDepthModel.html#a342a27a6bef3df278fec08953a9f2521">MetricDepthModel</a> {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classMetricDepthModel.html#a69c782419b38df86be51abb9c293a64f">   12</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classMetricDepthModel.html#a69c782419b38df86be51abb9c293a64f">CreateResult</a> = tl::</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        expected&lt;std::unique_ptr&lt;MetricDepthModel&gt;, TfLiteCreateRuntimeError&gt;;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    [[nodiscard]] <span class="keyword">static</span> <a class="code hl_typedef" href="classMetricDepthModel.html#a69c782419b38df86be51abb9c293a64f">CreateResult</a> <a class="code hl_function" href="classMetricDepthModel.html#a5fecf10b5e8668320d618323d1c19363">create</a>(</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        std::vector&lt;int8_t&gt;&amp;&amp; depth_model_data,</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        std::vector&lt;int8_t&gt;&amp;&amp; rel2abs_depth_model_data,</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        std::string_view gpu_delegate_serialization_dir,</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        std::string_view depth_model_token,</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        std::string_view rel2abs_depth_model_token,</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classMetricDepthModel.html">    9</a></span><span class="keyword">class </span><a class="code hl_function" href="classMetricDepthModel.html#aa5d3410458f6bb33defaab3d5a73d06f">MetricDepthModel</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classMetricDepthModel.html#a03f568efcd7441ab3ff8e1c369fa503e">   11</a></span>    <span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code hl_variable" href="classMetricDepthModel.html#a03f568efcd7441ab3ff8e1c369fa503e">POLYNOMIAL_DEGREE</a> = 4;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classMetricDepthModel.html#a7e4ce82e4784dfc265b4592f96c6ff8e">   12</a></span>    <span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code hl_variable" href="classMetricDepthModel.html#a7e4ce82e4784dfc265b4592f96c6ff8e">COEFFS_COUNT</a> = <a class="code hl_variable" href="classMetricDepthModel.html#a03f568efcd7441ab3ff8e1c369fa503e">POLYNOMIAL_DEGREE</a> + 1;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classMetricDepthModel.html#a69c782419b38df86be51abb9c293a64f">   14</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classMetricDepthModel.html#a69c782419b38df86be51abb9c293a64f">CreateResult</a> = tl::</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        expected&lt;std::unique_ptr&lt;MetricDepthModel&gt;, TfLiteCreateRuntimeError&gt;;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    [[nodiscard]] <span class="keyword">static</span> <a class="code hl_typedef" href="classMetricDepthModel.html#a69c782419b38df86be51abb9c293a64f">CreateResult</a> <a class="code hl_function" href="classMetricDepthModel.html#a64493456b7acfb0b799571e66304cf0e">create</a>(</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        std::vector&lt;int8_t&gt;&amp;&amp; depth_model_data,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        std::string_view gpu_delegate_serialization_dir,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        std::string_view depth_model_token,</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_typedef" href="TfLiteRuntime_8hpp.html#a0f81401a8cd180af6f4eae3afd0858fd">TfLiteLogWarningCallback</a> log_warning_callback,</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_typedef" href="TfLiteRuntime_8hpp.html#ae10cf5db164646559fbb4d9236808f87">TfLiteLogErrorCallback</a> log_error_callback</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    );</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classMetricDepthModel.html#a8a0ada072f3b913b073fd69374458fce">   25</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classMetricDepthModel.html#a8a0ada072f3b913b073fd69374458fce">RunResult</a> = tl::expected&lt;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_typedef" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer&lt;FloatTensorFormat::MetricDepth&gt;</a>,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        TfLiteRunInferenceError&gt;;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    [[nodiscard]] <a class="code hl_typedef" href="classMetricDepthModel.html#a8a0ada072f3b913b073fd69374458fce">RunResult</a></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="classMetricDepthModel.html#a88d53fd1af47ff34cb8b503dcd50c7a2">run</a>(<a class="code hl_typedef" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer&lt;FloatTensorFormat::ImageRGB255&gt;</a>&amp; input);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    [[nodiscard]] std::span&lt;const int&gt; <a class="code hl_function" href="classMetricDepthModel.html#a5a3de29559bfec957e2921a01abb1d6d">get_input_shape</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_typedef" href="TfLiteRuntime_8hpp.html#ae10cf5db164646559fbb4d9236808f87">TfLiteLogErrorCallback</a> log_error_callback,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordtype">bool</span> enable_npu,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        std::string npu_skel_directory</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    );</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classMetricDepthModel.html#a8a0ada072f3b913b073fd69374458fce">   27</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classMetricDepthModel.html#a8a0ada072f3b913b073fd69374458fce">RunResult</a> = tl::expected&lt;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_typedef" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer&lt;FloatTensorFormat::MetricDepth&gt;</a>,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        TfLiteRunInferenceError&gt;;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    [[nodiscard]] <a class="code hl_typedef" href="classMetricDepthModel.html#a8a0ada072f3b913b073fd69374458fce">RunResult</a></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="classMetricDepthModel.html#a88d53fd1af47ff34cb8b503dcd50c7a2">run</a>(<a class="code hl_typedef" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer&lt;FloatTensorFormat::ImageRGB255&gt;</a>&amp; input);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    [[nodiscard]] std::span&lt;const int&gt; <a class="code hl_function" href="classMetricDepthModel.html#ad8489121e1f5882bc2837206f483ce84">get_output_shape</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    [[nodiscard]] std::span&lt;const int&gt; <a class="code hl_function" href="classMetricDepthModel.html#a5a3de29559bfec957e2921a01abb1d6d">get_input_shape</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_function" href="classMetricDepthModel.html#a342a27a6bef3df278fec08953a9f2521">MetricDepthModel</a>(</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        std::unique_ptr&lt;DepthModel&gt;&amp;&amp; depth_model,</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        std::unique_ptr&lt;Rel2AbsDepthModel&gt;&amp;&amp; rel2abs_depth_model</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    );</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    std::unique_ptr&lt;DepthModel&gt; depth_model;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    std::unique_ptr&lt;Rel2AbsDepthModel&gt; rel2abs_depth_model;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    [[nodiscard]] std::span&lt;const int&gt; <a class="code hl_function" href="classMetricDepthModel.html#ad8489121e1f5882bc2837206f483ce84">get_output_shape</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_function" href="classMetricDepthModel.html#aa5d3410458f6bb33defaab3d5a73d06f">MetricDepthModel</a>(std::unique_ptr&lt;DepthModel&gt;&amp;&amp; depth_model);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">constexpr</span> <span class="keyword">static</span> std::array&lt;float, 5&gt; REL2ABS_COEFFS = {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        4.30595f, -6.5995E-03f, 5.25059E-6f, -2.7962E-9f, 9.28594E-13f</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    };</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    std::unique_ptr&lt;DepthModel&gt; depth_model;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
 </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>polynomial_4(<span class="keywordtype">float</span> x, <span class="keyword">const</span> std::array&lt;float, 5&gt;&amp; coeffs) {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">float</span> y = coeffs[4];</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    y = y * x + coeffs[3];</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    y = y * x + coeffs[2];</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    y = y * x + coeffs[1];</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    y = y * x + coeffs[0];</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">return</span> y;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> I, <span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>polynomial_n_impl(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keyword">const</span> std::array&lt;float, N + 1&gt;&amp; coeffs) {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">static_assert</span>(I &lt;= N);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> new_y = (I != N) ? (coeffs[I] + (y * x)) : coeffs[I];</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (I == 0) {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">return</span> new_y;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">return</span> polynomial_n_impl&lt;I - 1, N&gt;(x, new_y, coeffs);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">float</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>polynomial_n(<span class="keywordtype">float</span> x, <span class="keyword">const</span> std::array&lt;float, N + 1&gt;&amp; coeffs) {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">return</span> polynomial_n_impl&lt;N, N&gt;(x, 0.f, coeffs);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><a class="code hl_typedef" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer&lt;FloatTensorFormat::Rel2AbsDepthInput&gt;</a> <a class="code hl_function" href="MetricDepthModel_8hpp.html#a62c17e5b0217ff9e25346abf3a85411f">rel2abs_input_operator</a>(</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer&lt;FloatTensorFormat::ImageRGB255&gt;</a>&amp; rgb,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer&lt;FloatTensorFormat::RawRelativeDepth&gt;</a>&amp; depth</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">float</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>polynomial_4(<span class="keywordtype">float</span> x, <span class="keyword">const</span> std::array&lt;float, 5&gt;&amp; coeffs) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">float</span> y = coeffs[4];</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    y = y * x + coeffs[3];</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    y = y * x + coeffs[2];</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    y = y * x + coeffs[1];</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    y = y * x + coeffs[0];</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">return</span> y;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> I, <span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">float</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>polynomial_n_impl(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keyword">const</span> std::array&lt;float, N + 1&gt;&amp; coeffs) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">static_assert</span>(I &lt;= N);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> new_y = (I != N) ? (coeffs[I] + (y * x)) : coeffs[I];</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (I == 0) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">return</span> new_y;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">return</span> polynomial_n_impl&lt;I - 1, N&gt;(x, new_y, coeffs);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">float</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>polynomial_n(<span class="keywordtype">float</span> x, <span class="keyword">const</span> std::array&lt;float, N + 1&gt;&amp; coeffs) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">return</span> polynomial_n_impl&lt;N, N&gt;(x, 0.f, coeffs);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
+<div class="ttc" id="aMetricDepthModel_8hpp_html_a62c17e5b0217ff9e25346abf3a85411f"><div class="ttname"><a href="MetricDepthModel_8hpp.html#a62c17e5b0217ff9e25346abf3a85411f">rel2abs_input_operator</a></div><div class="ttdeci">FloatTensorBuffer&lt; FloatTensorFormat::Rel2AbsDepthInput &gt; rel2abs_input_operator(const FloatTensorBuffer&lt; FloatTensorFormat::ImageRGB255 &gt; &amp;rgb, const FloatTensorBuffer&lt; FloatTensorFormat::RawRelativeDepth &gt; &amp;depth)</div><div class="ttdef"><b>Definition</b> MetricDepthModel.cpp:61</div></div>
 <div class="ttc" id="aTensorBuffer_8hpp_html"><div class="ttname"><a href="TensorBuffer_8hpp.html">TensorBuffer.hpp</a></div></div>
-<div class="ttc" id="aTensorBuffer_8hpp_html_af6a91a7daa9796c6e1442bfd5cc810d0"><div class="ttname"><a href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a></div><div class="ttdeci">TensorBuffer&lt; float, FloatTensorFormat, FORMAT &gt; FloatTensorBuffer</div><div class="ttdef"><b>Definition</b> TensorBuffer.hpp:102</div></div>
+<div class="ttc" id="aTensorBuffer_8hpp_html_af6a91a7daa9796c6e1442bfd5cc810d0"><div class="ttname"><a href="TensorBuffer_8hpp.html#af6a91a7daa9796c6e1442bfd5cc810d0">FloatTensorBuffer</a></div><div class="ttdeci">TensorBuffer&lt; float, FloatTensorFormat, FORMAT &gt; FloatTensorBuffer</div><div class="ttdef"><b>Definition</b> TensorBuffer.hpp:106</div></div>
 <div class="ttc" id="aTfLiteRuntime_8hpp_html"><div class="ttname"><a href="TfLiteRuntime_8hpp.html">TfLiteRuntime.hpp</a></div></div>
 <div class="ttc" id="aTfLiteRuntime_8hpp_html_a0f81401a8cd180af6f4eae3afd0858fd"><div class="ttname"><a href="TfLiteRuntime_8hpp.html#a0f81401a8cd180af6f4eae3afd0858fd">TfLiteLogWarningCallback</a></div><div class="ttdeci">void(*)(std::string) TfLiteLogWarningCallback</div><div class="ttdef"><b>Definition</b> TfLiteRuntime.hpp:17</div></div>
 <div class="ttc" id="aTfLiteRuntime_8hpp_html_ae10cf5db164646559fbb4d9236808f87"><div class="ttname"><a href="TfLiteRuntime_8hpp.html#ae10cf5db164646559fbb4d9236808f87">TfLiteLogErrorCallback</a></div><div class="ttdeci">void(*)(std::string) TfLiteLogErrorCallback</div><div class="ttdef"><b>Definition</b> TfLiteRuntime.hpp:18</div></div>
 <div class="ttc" id="aclassDepthModel_html"><div class="ttname"><a href="classDepthModel.html">DepthModel</a></div><div class="ttdoc">A utility class for running depth estimation models like MiDaS.</div><div class="ttdef"><b>Definition</b> DepthModel.hpp:7</div></div>
-<div class="ttc" id="aclassMetricDepthModel_html_a342a27a6bef3df278fec08953a9f2521"><div class="ttname"><a href="classMetricDepthModel.html#a342a27a6bef3df278fec08953a9f2521">MetricDepthModel::MetricDepthModel</a></div><div class="ttdeci">MetricDepthModel(std::unique_ptr&lt; DepthModel &gt; &amp;&amp;depth_model, std::unique_ptr&lt; Rel2AbsDepthModel &gt; &amp;&amp;rel2abs_depth_model)</div><div class="ttdef"><b>Definition</b> MetricDepthModel.cpp:7</div></div>
-<div class="ttc" id="aclassMetricDepthModel_html_a5a3de29559bfec957e2921a01abb1d6d"><div class="ttname"><a href="classMetricDepthModel.html#a5a3de29559bfec957e2921a01abb1d6d">MetricDepthModel::get_input_shape</a></div><div class="ttdeci">std::span&lt; const int &gt; get_input_shape() const</div><div class="ttdef"><b>Definition</b> MetricDepthModel.cpp:68</div></div>
-<div class="ttc" id="aclassMetricDepthModel_html_a5fecf10b5e8668320d618323d1c19363"><div class="ttname"><a href="classMetricDepthModel.html#a5fecf10b5e8668320d618323d1c19363">MetricDepthModel::create</a></div><div class="ttdeci">static CreateResult create(std::vector&lt; int8_t &gt; &amp;&amp;depth_model_data, std::vector&lt; int8_t &gt; &amp;&amp;rel2abs_depth_model_data, std::string_view gpu_delegate_serialization_dir, std::string_view depth_model_token, std::string_view rel2abs_depth_model_token, TfLiteLogWarningCallback log_warning_callback, TfLiteLogErrorCallback log_error_callback)</div><div class="ttdef"><b>Definition</b> MetricDepthModel.cpp:14</div></div>
-<div class="ttc" id="aclassMetricDepthModel_html_a69c782419b38df86be51abb9c293a64f"><div class="ttname"><a href="classMetricDepthModel.html#a69c782419b38df86be51abb9c293a64f">MetricDepthModel::CreateResult</a></div><div class="ttdeci">tl:: expected&lt; std::unique_ptr&lt; MetricDepthModel &gt;, TfLiteCreateRuntimeError &gt; CreateResult</div><div class="ttdef"><b>Definition</b> MetricDepthModel.hpp:12</div></div>
-<div class="ttc" id="aclassMetricDepthModel_html_a88d53fd1af47ff34cb8b503dcd50c7a2"><div class="ttname"><a href="classMetricDepthModel.html#a88d53fd1af47ff34cb8b503dcd50c7a2">MetricDepthModel::run</a></div><div class="ttdeci">RunResult run(FloatTensorBuffer&lt; FloatTensorFormat::ImageRGB255 &gt; &amp;input)</div><div class="ttdef"><b>Definition</b> MetricDepthModel.cpp:47</div></div>
-<div class="ttc" id="aclassMetricDepthModel_html_a8a0ada072f3b913b073fd69374458fce"><div class="ttname"><a href="classMetricDepthModel.html#a8a0ada072f3b913b073fd69374458fce">MetricDepthModel::RunResult</a></div><div class="ttdeci">tl::expected&lt; FloatTensorBuffer&lt; FloatTensorFormat::MetricDepth &gt;, TfLiteRunInferenceError &gt; RunResult</div><div class="ttdef"><b>Definition</b> MetricDepthModel.hpp:25</div></div>
-<div class="ttc" id="aclassMetricDepthModel_html_ad8489121e1f5882bc2837206f483ce84"><div class="ttname"><a href="classMetricDepthModel.html#ad8489121e1f5882bc2837206f483ce84">MetricDepthModel::get_output_shape</a></div><div class="ttdeci">std::span&lt; const int &gt; get_output_shape() const</div><div class="ttdef"><b>Definition</b> MetricDepthModel.cpp:72</div></div>
-<div class="ttc" id="aclassRel2AbsDepthModel_html"><div class="ttname"><a href="classRel2AbsDepthModel.html">Rel2AbsDepthModel</a></div><div class="ttdef"><b>Definition</b> Rel2AbsDepthModel.hpp:8</div></div>
+<div class="ttc" id="aclassMetricDepthModel_html_a03f568efcd7441ab3ff8e1c369fa503e"><div class="ttname"><a href="classMetricDepthModel.html#a03f568efcd7441ab3ff8e1c369fa503e">MetricDepthModel::POLYNOMIAL_DEGREE</a></div><div class="ttdeci">static constexpr size_t POLYNOMIAL_DEGREE</div><div class="ttdef"><b>Definition</b> MetricDepthModel.hpp:11</div></div>
+<div class="ttc" id="aclassMetricDepthModel_html_a5a3de29559bfec957e2921a01abb1d6d"><div class="ttname"><a href="classMetricDepthModel.html#a5a3de29559bfec957e2921a01abb1d6d">MetricDepthModel::get_input_shape</a></div><div class="ttdeci">std::span&lt; const int &gt; get_input_shape() const</div><div class="ttdef"><b>Definition</b> MetricDepthModel.cpp:47</div></div>
+<div class="ttc" id="aclassMetricDepthModel_html_a64493456b7acfb0b799571e66304cf0e"><div class="ttname"><a href="classMetricDepthModel.html#a64493456b7acfb0b799571e66304cf0e">MetricDepthModel::create</a></div><div class="ttdeci">static CreateResult create(std::vector&lt; int8_t &gt; &amp;&amp;depth_model_data, std::string_view gpu_delegate_serialization_dir, std::string_view depth_model_token, TfLiteLogWarningCallback log_warning_callback, TfLiteLogErrorCallback log_error_callback, bool enable_npu, std::string npu_skel_directory)</div><div class="ttdef"><b>Definition</b> MetricDepthModel.cpp:9</div></div>
+<div class="ttc" id="aclassMetricDepthModel_html_a69c782419b38df86be51abb9c293a64f"><div class="ttname"><a href="classMetricDepthModel.html#a69c782419b38df86be51abb9c293a64f">MetricDepthModel::CreateResult</a></div><div class="ttdeci">tl:: expected&lt; std::unique_ptr&lt; MetricDepthModel &gt;, TfLiteCreateRuntimeError &gt; CreateResult</div><div class="ttdef"><b>Definition</b> MetricDepthModel.hpp:14</div></div>
+<div class="ttc" id="aclassMetricDepthModel_html_a7e4ce82e4784dfc265b4592f96c6ff8e"><div class="ttname"><a href="classMetricDepthModel.html#a7e4ce82e4784dfc265b4592f96c6ff8e">MetricDepthModel::COEFFS_COUNT</a></div><div class="ttdeci">static constexpr size_t COEFFS_COUNT</div><div class="ttdef"><b>Definition</b> MetricDepthModel.hpp:12</div></div>
+<div class="ttc" id="aclassMetricDepthModel_html_a88d53fd1af47ff34cb8b503dcd50c7a2"><div class="ttname"><a href="classMetricDepthModel.html#a88d53fd1af47ff34cb8b503dcd50c7a2">MetricDepthModel::run</a></div><div class="ttdeci">RunResult run(FloatTensorBuffer&lt; FloatTensorFormat::ImageRGB255 &gt; &amp;input)</div><div class="ttdef"><b>Definition</b> MetricDepthModel.cpp:34</div></div>
+<div class="ttc" id="aclassMetricDepthModel_html_a8a0ada072f3b913b073fd69374458fce"><div class="ttname"><a href="classMetricDepthModel.html#a8a0ada072f3b913b073fd69374458fce">MetricDepthModel::RunResult</a></div><div class="ttdeci">tl::expected&lt; FloatTensorBuffer&lt; FloatTensorFormat::MetricDepth &gt;, TfLiteRunInferenceError &gt; RunResult</div><div class="ttdef"><b>Definition</b> MetricDepthModel.hpp:27</div></div>
+<div class="ttc" id="aclassMetricDepthModel_html_aa5d3410458f6bb33defaab3d5a73d06f"><div class="ttname"><a href="classMetricDepthModel.html#aa5d3410458f6bb33defaab3d5a73d06f">MetricDepthModel::MetricDepthModel</a></div><div class="ttdeci">MetricDepthModel(std::unique_ptr&lt; DepthModel &gt; &amp;&amp;depth_model)</div><div class="ttdef"><b>Definition</b> MetricDepthModel.cpp:6</div></div>
+<div class="ttc" id="aclassMetricDepthModel_html_ad8489121e1f5882bc2837206f483ce84"><div class="ttname"><a href="classMetricDepthModel.html#ad8489121e1f5882bc2837206f483ce84">MetricDepthModel::get_output_shape</a></div><div class="ttdeci">std::span&lt; const int &gt; get_output_shape() const</div><div class="ttdef"><b>Definition</b> MetricDepthModel.cpp:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

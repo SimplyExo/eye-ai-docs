@@ -6,6 +6,5 @@ var searchData=
   ['asymmetricquantizationerror_3',['AsymmetricQuantizationError',['../structAsymmetricQuantizationError.html',1,'']]],
   ['audiomain_4',['AudioMain',['../classAudioMain.html',1,'AudioMain'],['../classAudioMain.html#af86acec9bd16cf7b188b9c6b7321138c',1,'AudioMain::AudioMain()']]],
   ['audiomain_2ecpp_5',['AudioMain.cpp',['../AudioMain_8cpp.html',1,'']]],
-  ['audiomain_2ehpp_6',['AudioMain.hpp',['../AudioMain_8hpp.html',1,'']]],
-  ['audiosourcedata_2ecpp_7',['AudioSourceData.cpp',['../AudioSourceData_8cpp.html',1,'']]]
+  ['audiomain_2ehpp_6',['AudioMain.hpp',['../AudioMain_8hpp.html',1,'']]]
 ];

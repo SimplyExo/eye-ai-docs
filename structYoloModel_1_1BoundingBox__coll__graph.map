@@ -1,7 +1,7 @@
 <map id="YoloModel::BoundingBox" name="YoloModel::BoundingBox">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,188,172,215"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="49,97,128,124"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,140,91,187,86,187,86,140"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="26,5,151,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,64,91,97,86,97,86,64"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,192,187,220"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="53,99,139,127"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,142,99,192,93,192,93,142"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="27,5,165,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,65,99,99,93,99,93,65"/>
 </map>

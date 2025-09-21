@@ -2,8 +2,8 @@ var classSpatialAudio =
 [
     [ "SpatialAudio", "classSpatialAudio.html#a34febaf5c348ce7c8db74ee79ebb5ddf", null ],
     [ "~SpatialAudio", "classSpatialAudio.html#afe9c80085ab66f7c4ef67821adbc0482", null ],
-    [ "getAIData", "classSpatialAudio.html#a405bc87b0f4c8687cbcae24b1f3f3355", null ],
-    [ "getProcessingStatus", "classSpatialAudio.html#ad1f226c461bc07184ed7e12da995d6aa", null ],
+    [ "getAIData", "classSpatialAudio.html#a199755a3a6c7810e3c0b9c11be81dfa9", null ],
+    [ "getProcessingStatus", "classSpatialAudio.html#a17395529aa416e610d1fa7cbb24c3c37", null ],
     [ "processDepthEstimationData", "classSpatialAudio.html#aa8b00ea77a24cdca27e625fb0243b710", null ],
     [ "processObjectDetectionData", "classSpatialAudio.html#ab29dca058cab0af4485084a376da8b3d", null ],
     [ "depth_audio_running", "classSpatialAudio.html#aa8d61139ff6ed5caa324b48b97198062", null ],

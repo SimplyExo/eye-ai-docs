@@ -233,7 +233,7 @@ $(function(){initNavTree('TfLiteUtils_8cpp.html',''); initResizable(true); });
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for TfLiteUtils.cpp:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="TfLiteUtils_8cpp__incl.svg" width="100%" height="508"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="TfLiteUtils_8cpp__incl.svg" width="100%" height="512"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -244,6 +244,8 @@ Functions</h2></td></tr>
 <tr class="separator:ae823b3220850dfc0a94e0fa0b74dbb2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb772512bf5293e0a930aae03e8a4c94" id="r_acb772512bf5293e0a930aae03e8a4c94"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; TfLiteDelegate, decltype(&amp;TfLiteGpuDelegateV2Delete)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb772512bf5293e0a930aae03e8a4c94">create_gpu_delegate</a> (std::string_view gpu_delegate_serialization_dir, std::string_view model_token, <a class="el" href="classProfilingFrame.html">ProfilingFrame</a> &amp;profiling_frame)</td></tr>
 <tr class="separator:acb772512bf5293e0a930aae03e8a4c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa841feed277010c0c5177595c293525" id="r_aaa841feed277010c0c5177595c293525"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; TfLiteDelegate, void(*)(TfLiteDelegate *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa841feed277010c0c5177595c293525">create_qnn_npu_delegate</a> (std::string_view delegate_serialization_dir, std::string_view model_token, <a class="el" href="TfLiteUtils_8hpp.html#af58645ffd10a431f69fd311629c92a1f">NpuConfiguration</a> config, std::string_view skel_library_dir)</td></tr>
+<tr class="separator:aaa841feed277010c0c5177595c293525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af53c58f7704db3b5920d40f03fdf6219" id="r_af53c58f7704db3b5920d40f03fdf6219"><td class="memItemLeft" align="right" valign="top">std::optional&lt; TfLiteLoadInputError &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af53c58f7704db3b5920d40f03fdf6219">load_input_tensor_with_floats</a> (TfLiteTensor *input_tensor, std::span&lt; const float &gt; values, <a class="el" href="classProfilingFrame.html">ProfilingFrame</a> &amp;profiling_frame)</td></tr>
 <tr class="memdesc:af53c58f7704db3b5920d40f03fdf6219"><td class="mdescLeft">&#160;</td><td class="mdescRight">loads input tensor with floats array, supports quantization  <br /></td></tr>
 <tr class="separator:af53c58f7704db3b5920d40f03fdf6219"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,6 +299,46 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aaa841feed277010c0c5177595c293525" name="aaa841feed277010c0c5177595c293525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa841feed277010c0c5177595c293525">&#9670;&#160;</a></span>create_qnn_npu_delegate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; TfLiteDelegate, void(*)(TfLiteDelegate *)&gt; create_qnn_npu_delegate </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>delegate_serialization_dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>model_token</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="TfLiteUtils_8hpp.html#af58645ffd10a431f69fd311629c92a1f">NpuConfiguration</a></td>          <td class="paramname"><span class="paramname"><em>config</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>skel_library_dir</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>nullptr if platform does not support qnn delegate right now </dd></dl>
 
 </div>
 </div>

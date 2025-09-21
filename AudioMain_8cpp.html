@@ -234,21 +234,24 @@ $(function(){initNavTree('AudioMain_8cpp.html',''); initResizable(true); });
 <code>#include &quot;<a class="el" href="DepthAudioSourceData_8hpp_source.html">EyeAICore/audio/DepthAudioSourceData.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ObjectAudioSourceData_8hpp_source.html">EyeAICore/audio/ObjectAudioSourceData.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SpatialAudioSettings_8hpp_source.html">EyeAICore/audio/SpatialAudioSettings.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Profiling_8hpp_source.html">EyeAICore/utils/Profiling.hpp</a>&quot;</code><br />
 <code>#include &quot;sndfile.h&quot;</code><br />
 <code>#include &lt;AL/al.h&gt;</code><br />
 <code>#include &lt;AL/alc.h&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;atomic&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;format&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
 <code>#include &lt;sndfile.hh&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for AudioMain.cpp:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="AudioMain_8cpp__incl.svg" width="100%" height="508"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="AudioMain_8cpp__incl.svg" width="100%" height="512"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -262,8 +265,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:adcc1e59d6160f163b84377e0855c9f5d" id="r_adcc1e59d6160f163b84377e0855c9f5d"><td class="memItemLeft" align="right" valign="top">typedef ALCboolean(ALC_APIENTRY *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcc1e59d6160f163b84377e0855c9f5d">LPALCRESETDEVICESOFT</a>) (ALCdevice *, const ALCint *)</td></tr>
-<tr class="separator:adcc1e59d6160f163b84377e0855c9f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab949fa6802c2c846c6c85da98286f798" id="r_ab949fa6802c2c846c6c85da98286f798"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab949fa6802c2c846c6c85da98286f798">LPALCRESETDEVICESOFT</a></td></tr>
+<tr class="separator:ab949fa6802c2c846c6c85da98286f798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a94ea35f7acd8fc16d23065720e10a46b" name="a94ea35f7acd8fc16d23065720e10a46b"></a>
@@ -317,18 +320,22 @@ Typedefs</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="adcc1e59d6160f163b84377e0855c9f5d" name="adcc1e59d6160f163b84377e0855c9f5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcc1e59d6160f163b84377e0855c9f5d">&#9670;&#160;</a></span>LPALCRESETDEVICESOFT</h2>
+<a id="ab949fa6802c2c846c6c85da98286f798" name="ab949fa6802c2c846c6c85da98286f798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab949fa6802c2c846c6c85da98286f798">&#9670;&#160;</a></span>LPALCRESETDEVICESOFT</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef ALCboolean(ALC_APIENTRY * LPALCRESETDEVICESOFT) (ALCdevice *, const ALCint *)</td>
+          <td class="memname">using <a class="el" href="#ab949fa6802c2c846c6c85da98286f798">LPALCRESETDEVICESOFT</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line"> ALCboolean(ALC_APIENTRY* )(</div>
+<div class="line">    ALCdevice*,</div>
+<div class="line">    <span class="keyword">const</span> ALCint*</div>
+<div class="line">)</div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

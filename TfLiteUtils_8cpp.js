@@ -1,6 +1,7 @@
 var TfLiteUtils_8cpp =
 [
     [ "create_gpu_delegate", "TfLiteUtils_8cpp.html#acb772512bf5293e0a930aae03e8a4c94", null ],
+    [ "create_qnn_npu_delegate", "TfLiteUtils_8cpp.html#aaa841feed277010c0c5177595c293525", null ],
     [ "format_tflite_status", "TfLiteUtils_8cpp.html#afb2851d17cf7bd489ca993e24487c4fd", null ],
     [ "format_tflite_type", "TfLiteUtils_8cpp.html#acbfc9d639c2cd6e23947533e481a17b2", null ],
     [ "get_tensor_quantization", "TfLiteUtils_8cpp.html#a59b869dbae855598bd3e74f95316d816", null ],

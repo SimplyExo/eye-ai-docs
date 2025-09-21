@@ -246,20 +246,21 @@ $(function(){initNavTree('CalculateSoundOrigin_8hpp_source.html',''); initResiza
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="comment">//FOV of the camera to ONE side</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">float</span> maxAngle = 90;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">float</span> distanceToObject;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">float</span> maxAngle = 80;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">float</span> distanceToObject  =0;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">//coordinates of the pixel: from 1 to Resolution</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">int</span> pixelXCoordinate;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">int</span> pixelXCoordinate = 0;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">//int pixelYCoordinate;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">int</span> pictureXResolution;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">int</span> pictureXResolution  =0;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">//int pictureYResolution;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">float</span> getPixelAngle();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    std::array&lt;float, 3&gt; getVectorToOrigin(<span class="keywordtype">float</span> pixelAngle);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    std::array&lt;float, 3&gt; getOrigin(std::array&lt;float, 3&gt; directionalVector);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    [[nodiscard]] <span class="keywordtype">float</span> getPixelAngle() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">static</span> std::array&lt;float, 3&gt; getVectorToOrigin(<span class="keywordtype">float</span> pixelAngle);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    [[nodiscard]] std::array&lt;float, 3&gt; getOrigin(std::array&lt;float, 3&gt; directionalVector) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
 </div>
 <div class="ttc" id="aclassCalculateSoundOrigin_html"><div class="ttname"><a href="classCalculateSoundOrigin.html">CalculateSoundOrigin</a></div><div class="ttdef"><b>Definition</b> CalculateSoundOrigin.hpp:11</div></div>
-<div class="ttc" id="aclassCalculateSoundOrigin_html_ae61a87da77b773b2d5feffc000119962"><div class="ttname"><a href="classCalculateSoundOrigin.html#ae61a87da77b773b2d5feffc000119962">CalculateSoundOrigin::calculateSoundOrigin</a></div><div class="ttdeci">std::array&lt; float, 3 &gt; calculateSoundOrigin(std::array&lt; int, 2 &gt; pixelCoordinates, float distanceToObject, int pictureXResolution)</div><div class="ttdef"><b>Definition</b> CalculateSoundOrigin.cpp:5</div></div>
+<div class="ttc" id="aclassCalculateSoundOrigin_html_ae61a87da77b773b2d5feffc000119962"><div class="ttname"><a href="classCalculateSoundOrigin.html#ae61a87da77b773b2d5feffc000119962">CalculateSoundOrigin::calculateSoundOrigin</a></div><div class="ttdeci">std::array&lt; float, 3 &gt; calculateSoundOrigin(std::array&lt; int, 2 &gt; pixelCoordinates, float distanceToObject, int pictureXResolution)</div><div class="ttdef"><b>Definition</b> CalculateSoundOrigin.cpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
